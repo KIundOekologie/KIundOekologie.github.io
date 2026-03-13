@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Drop Cap für erste Buchstaben */
+  .drop-cap::first-letter {
+    float: left;
+    font-family: var(--font-playfair), serif;
+    font-size: 3.5em;
+    line-height: 0.85;
+    padding-right: 0.1em;
+    padding-top: 0.05em;
+    color: #2A2A28;
+    font-weight: 400;
+  }
+
+  /* Feine Scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F4F1EA;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D1CEC5;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B85D43;
+  }
+}
+
+@layer components {
+  /* Vintage Button */
+  .btn-vintage {
+    @apply inline-block px-6 py-3 sm:px-8 sm:py-4 bg-accent-flora text-white font-body text-sm sm:text-base tracking-wider uppercase no-underline;
+    @apply border-none cursor-pointer;
+    @apply hover:bg-accent-flora/90 active:bg-accent-flora/95;
+    @apply transition-colors duration-150;
+  }
+
+  /* Fine Divider */
+  .divider {
+    @apply w-full h-px bg-border-color my-8 sm:my-12;
+  }
+
+  /* Section Container */
+  .section-container {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16;
+  }
+
+  /* Vintage Fact Box */
+  .fact-box {
+    @apply border border-border-color p-4 sm:p-6 my-6 sm:my-8;
+    @apply font-body text-text-main;
+  }
+
+  /* Randnotiz */
+  .margin-note {
+    @apply border-l border-border-color pl-4 sm:pl-6 my-4 sm:my-6;
+    @apply text-sm sm:text-base text-text-main/80 leading-relaxed;
+  }
+
+  /* Content Text */
+  .content-text {
+    @apply font-body text-base sm:text-lg leading-relaxed text-text-main;
+    @apply text-justify;
+  }
+}
+
+/* Bild mit körnigem Effekt */
+.grainy-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.grainy-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyMDAnIGhlaWdodD0nMjAwJz48ZmlsdGVyIGlkPSdnoic+PGZlVHVyYnVsZW5jZSB0eXBlPSdmcmFjdGFsT2lzaWUnIGJhc2VGcmVxdWVuY3k9JzAuODUnIG51bU9jdGF2ZXM9JzMnIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWx0ZXI9J3VybCgjZykiIG9wYWNpdHk9JzAuMycvPjwvc3ZnPg==');
+  background-size: '100px 100px';
+  opacity: 0.15;
+  pointer-events: none;
+}
