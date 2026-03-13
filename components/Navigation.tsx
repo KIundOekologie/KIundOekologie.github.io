@@ -20,9 +20,6 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6 sm:gap-8">
-            <Link href="/" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Home
-            </Link>
             <Link href="/station-1" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
               Station 1
             </Link>
@@ -64,9 +61,6 @@ export function Navigation() {
       {menuOpen && (
         <div className="md:hidden border-t border-border-color bg-bg-base">
           <div className="px-4 py-3 space-y-2">
-            <Link href="/" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Home
-            </Link>
             <Link href="/station-1" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
               Station 1
             </Link>

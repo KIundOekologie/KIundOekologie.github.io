@@ -83,24 +83,32 @@ export default function Station5Page() {
 
   return (
     <div className="w-full">
-      {/* Header */}
-      <section className="section-container">
-        <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-          <span className="micro-copy text-accent-terra">Station 5</span>
-          <div className="h-px flex-1 bg-border-color" />
+      {/* Station Hero Header */}
+      <section className="relative w-full overflow-hidden" style={{ height: "clamp(280px, 42vh, 480px)" }}>
+        <img
+          src="/Bild8.jpg"
+          alt="Langzeitbelichtung – verwischte Welle und Küste"
+          className="absolute inset-0 w-full h-full object-cover vintage-filter"
+          style={{ filter: "sepia(10%) contrast(95%) brightness(78%)" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-text-main/85 via-text-main/20 to-text-main/30" />
+        <div className="absolute bottom-0 left-0 right-0 section-container pb-10 sm:pb-14">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="font-body text-[10px] text-white/45 uppercase tracking-[0.22em]">Station 05</span>
+            <div className="h-px flex-1 bg-white/15" />
+          </div>
+          <h1
+            className="font-heading text-white font-normal leading-[0.9]"
+            style={{ fontSize: "clamp(2.8rem, 7vw, 5.5rem)", letterSpacing: "-0.025em" }}
+          >
+            Blick in die Sterne
+          </h1>
+          <p className="font-heading text-sm text-white/40 italic mt-3">(Sternwarte)</p>
         </div>
-
-        <h1 className="hero-text text-text-main leading-tight mb-8 sm:mb-12">
-          Blick in die Sterne
-        </h1>
-
-        <p className="font-heading text-base sm:text-lg text-accent-terra italic-heading mb-8">
-          (Sternwarte)
-        </p>
       </section>
 
       {/* Intro */}
-      <section className="section-container">
+      <section className="section-container pt-10 sm:pt-14">
         <div className="flow-text-justified drop-cap">
           <p className="mb-6">
             Die Sternwarte steht für klassischen Forschergeist: beobachten, messen, deuten. Doch viele Phänomene der Gegenwart entziehen sich menschlicher Wahrnehmung, weil sie zu groß, zu komplex und räumlich-zeitlich zu verteilt sind. <span className="font-heading text-accent-terra">Timothy Morton</span> nennt solche Phänomene <span className="italic-heading text-accent-flora">"Hyperobjekte"</span> – etwa den Klimawandel, aber auch technische Systeme.

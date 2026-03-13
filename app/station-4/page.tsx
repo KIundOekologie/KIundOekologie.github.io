@@ -6,20 +6,31 @@ import { NetworkTinder } from "@/components/NetworkTinder";
 export default function Station4Page() {
   return (
     <div className="w-full">
-      {/* Header */}
-      <section className="section-container">
-        <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-          <span className="micro-copy text-accent-terra">Station 4</span>
-          <div className="h-px flex-1 bg-border-color" />
+      {/* Station Hero Header */}
+      <section className="relative w-full overflow-hidden" style={{ height: "clamp(280px, 42vh, 480px)" }}>
+        <img
+          src="/Bild10.jpg"
+          alt="Verflochtene Baumwurzeln – rhizomatische Netzwerke"
+          className="absolute inset-0 w-full h-full object-cover vintage-filter"
+          style={{ filter: "sepia(8%) contrast(95%) brightness(72%)", objectPosition: "center 30%" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-text-main/85 via-text-main/25 to-text-main/35" />
+        <div className="absolute bottom-0 left-0 right-0 section-container pb-10 sm:pb-14">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="font-body text-[10px] text-white/45 uppercase tracking-[0.22em]">Station 04</span>
+            <div className="h-px flex-1 bg-white/15" />
+          </div>
+          <h1
+            className="font-heading text-white font-normal leading-[0.9]"
+            style={{ fontSize: "clamp(2.8rem, 7vw, 5.5rem)", letterSpacing: "-0.025em" }}
+          >
+            Bio-logische Netzwerke
+          </h1>
         </div>
-
-        <h1 className="hero-text text-text-main leading-tight mb-8 sm:mb-12">
-          Bio-logische Netzwerke
-        </h1>
       </section>
 
       {/* Intro */}
-      <section className="section-container">
+      <section className="section-container pt-10 sm:pt-14">
         <div className="flow-text-justified drop-cap">
           <p className="mb-6">
             Unter Ihren Füßen findet gerade eine Rechenleistung statt, die wir erst langsam zu verstehen beginnen. Das <span className="font-heading text-accent-flora">Myzel</span>, das fadenförmige Netzwerk der Pilze, tauscht zwischen den Bäumen dieser Wiese Nährstoffe und Informationen über Schädlingsbefall aus. Es ist ein dezentrales, lernfähiges System, eine Intelligenz ohne Gehirn.

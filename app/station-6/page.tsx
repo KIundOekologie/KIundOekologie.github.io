@@ -5,24 +5,32 @@ import Link from "next/link";
 export default function Station6Page() {
   return (
     <div className="w-full">
-      {/* Header */}
-      <section className="section-container">
-        <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-          <span className="micro-copy text-accent-terra">Station 6</span>
-          <div className="h-px flex-1 bg-border-color" />
+      {/* Station Hero Header */}
+      <section className="relative w-full overflow-hidden" style={{ height: "clamp(280px, 42vh, 480px)" }}>
+        <img
+          src="/Bild5.jpg"
+          alt="Wasserreflexion mit Pflanzensilhouetten – gespiegelte Wirklichkeit"
+          className="absolute inset-0 w-full h-full object-cover vintage-filter"
+          style={{ filter: "sepia(8%) contrast(95%) brightness(72%)" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-text-main/85 via-text-main/25 to-text-main/30" />
+        <div className="absolute bottom-0 left-0 right-0 section-container pb-10 sm:pb-14">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="font-body text-[10px] text-white/45 uppercase tracking-[0.22em]">Station 06</span>
+            <div className="h-px flex-1 bg-white/15" />
+          </div>
+          <h1
+            className="font-heading text-white font-normal leading-[0.9]"
+            style={{ fontSize: "clamp(2.8rem, 7vw, 5.5rem)", letterSpacing: "-0.025em" }}
+          >
+            Perspektive
+          </h1>
+          <p className="font-heading text-sm text-white/40 italic mt-3">(Ausblick)</p>
         </div>
-
-        <h1 className="hero-text text-text-main leading-tight mb-8 sm:mb-12">
-          Perspektive
-        </h1>
-
-        <p className="font-heading text-base sm:text-lg text-accent-terra italic-heading mb-8">
-          (Ausblick)
-        </p>
       </section>
 
       {/* Intro */}
-      <section className="section-container">
+      <section className="section-container pt-10 sm:pt-14">
         <div className="flow-text-justified drop-cap">
           <p className="mb-6">
             Auf dem Weg über den Campus haben wir gesehen, dass die alte Erzählung eines fundamentalen Gegensatzes von Technik und Natur nicht länger trägt. In einer Welt begrenzter Ressourcen können wir uns eine (gedankliche) Trennung dieser beiden Sphären schlichtweg nicht mehr leisten. Eine tiefe Vernetzung der Systeme scheint unausweichlich. Dabei zeigen viele positive Beispiele, welche gewinnbringenden Lösungen aus diesen Verbindungen entstehen können.
