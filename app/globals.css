@@ -73,11 +73,27 @@
 
   /* Micro-Copy (Captions, Dates, Categories) */
   .micro-copy {
-    @apply font-body text-micro uppercase tracking-micro text-dark-slate font-medium;
+    @apply font-body text-sm sm:text-base uppercase tracking-micro text-dark-slate font-medium;
   }
 
   .micro-copy-lg {
-    @apply font-body text-micro-lg uppercase tracking-micro text-dark-slate font-medium;
+    @apply font-body text-base sm:text-lg uppercase tracking-micro text-dark-slate font-medium;
+  }
+
+  /* Fact Box Heading - larger red headings */
+  .fact-heading {
+    @apply font-heading text-sm sm:text-base uppercase tracking-wider text-accent-terra font-medium;
+  }
+
+  /* Italic classes that maintain font families */
+  .italic-heading {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+  }
+
+  .italic-body {
+    font-family: var(--font-inter), sans-serif;
+    font-style: italic;
   }
 
   /* === BUTTONS === */
@@ -217,7 +233,7 @@
   /* Quote Box */
   .quote-box {
     @apply border-l-2 border-accent-terra pl-6 py-4 my-8;
-    @apply font-heading text-2xl lg:text-3xl text-text-main italic;
+    @apply font-heading text-2xl lg:text-3xl text-text-main italic-heading;
   }
 
   /* === GLASSMORPHISM === */

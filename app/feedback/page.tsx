@@ -3,6 +3,19 @@
 import Link from "next/link";
 import { useState } from "react";
 
+const OPTIONS_Q2 = [
+  "Dass KI aus physischen Rohstoffen der Erde besteht (Geologie der Medien).",
+  "Dass hinter der KI menschliche Klick-Arbeit steckt (Ghost Work).",
+  "Die Parallelen zwischen Pilznetzwerken und neuronalen Netzen.",
+  "Dass wir im Anthropozän Natur und Technik nicht mehr trennen können.",
+];
+
+const OPTIONS_Q3 = [
+  "Sehr gut – Smartphone und Umgebung haben sich toll ergänzt.",
+  "Okay – Aber ich habe mehr auf den Bildschirm als in die Natur geschaut.",
+  "Schwierig – Das Lesen am Handy hat mich eher von der Umgebung abgelenkt.",
+];
+
 export default function FeedbackPage() {
   const [rating, setRating] = useState(0);
   const [q2Answer, setQ2Answer] = useState("");
@@ -11,9 +24,8 @@ export default function FeedbackPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Hier würde die Formular-Verarbeitung stattfinden
     console.log({ rating, q2Answer, q3Answer, q4Answer });
-    alert("Vielen Dank für Ihr Feedback!");
+    alert("Vielen Dank für dein Feedback!");
   };
 
   return (
@@ -21,18 +33,16 @@ export default function FeedbackPage() {
       {/* Header */}
       <section className="section-container">
         <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-          <span className="font-heading text-sm text-accent-terra tracking-wider uppercase">
-            Station 7
-          </span>
+          <span className="micro-copy text-accent-terra">Station 7</span>
           <div className="h-px flex-1 bg-border-color" />
         </div>
 
-        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-text-main leading-tight mb-8 sm:mb-12 tracking-tight">
+        <h1 className="hero-text text-text-main leading-tight mb-8 sm:mb-12">
           Feedback
         </h1>
 
-        <p className="font-body text-base sm:text-lg text-text-main/70 mb-8 sm:mb-12">
-          Dieser Fragebogen hilft uns, die Tour weiterzuentwickeln. Ihre Antworten werden anonym gespeichert.
+        <p className="font-body text-base sm:text-lg text-text-main/70 mb-8 sm:mb-12 max-w-readable">
+          Dieser Fragebogen hilft uns, die Tour weiterzuentwickeln. Deine Antworten werden anonym gespeichert.
         </p>
       </section>
 
@@ -42,7 +52,7 @@ export default function FeedbackPage() {
           {/* Frage 1 - Rating mit Rauten */}
           <div className="mb-10 sm:mb-12">
             <label className="block font-heading text-base sm:text-lg text-text-main mb-4 sm:mb-6">
-              <span className="text-accent-terra">1.</span> Hat diese Tour Ihre Sichtweise auf KI und Natur verändert?
+              <span className="text-accent-terra">1.</span> Hat diese Tour deine Sichtweise auf das Verhältnis von KI und Natur verändert?
             </label>
 
             <div className="flex items-center justify-center gap-3 sm:gap-4">
@@ -70,7 +80,7 @@ export default function FeedbackPage() {
             </div>
 
             <div className="flex justify-between mt-3 px-2">
-              <span className="font-body text-xs text-text-main/60">Überhaupt nicht</span>
+              <span className="font-body text-xs text-text-main/60">Gar nicht</span>
               <span className="font-body text-xs text-text-main/60">Sehr stark</span>
             </div>
           </div>
@@ -80,17 +90,11 @@ export default function FeedbackPage() {
           {/* Frage 2 - Single Choice mit Klammern */}
           <div className="mb-10 sm:mb-12">
             <label className="block font-heading text-base sm:text-lg text-text-main mb-4 sm:mb-6">
-              <span className="text-accent-terra">2.</span> Welcher der folgenden Gedanken hat Sie am meisten beschäftigt?
+              <span className="text-accent-terra">2.</span> Welcher der folgenden Gedanken wird dir nach diesem Spaziergang am ehesten im Gedächtnis bleiben?
             </label>
 
             <div className="space-y-3 sm:space-y-4 font-body text-base sm:text-lg">
-              {[
-                "Die Verbindung von Garten und KI als Metapher",
-                "Der Energieverbrauch von Data Centern",
-                "Hyperobjekte und nicht-lokale Phänomene",
-                "Die Frage nach Agency in KI-Systemen",
-                "Die eigene Rolle im Anthropozän"
-              ].map((option, index) => (
+              {OPTIONS_Q2.map((option, index) => (
                 <label
                   key={index}
                   className="flex items-start gap-3 cursor-pointer group"
@@ -119,16 +123,11 @@ export default function FeedbackPage() {
           {/* Frage 3 - Format-Frage */}
           <div className="mb-10 sm:mb-12">
             <label className="block font-heading text-base sm:text-lg text-text-main mb-4 sm:mb-6">
-              <span className="text-accent-terra">3.</span> Wie hat das Format „Audiowalk mit Website" für Sie funktioniert?
+              <span className="text-accent-terra">3.</span> Wie hat das Format (Texte am Smartphone + physischer Spaziergang im Cyber Valley) für dich funktioniert?
             </label>
 
             <div className="space-y-3 sm:space-y-4 font-body text-base sm:text-lg">
-              {[
-                "Sehr gut – die Kombination war genau richtig",
-                "Gut – aber ich hätte mir mehr Audio-Inhalte gewünscht",
-                "Eher schwach – Text war draußen schwer zu lesen",
-                "Nicht gut – ich hätte ein anderes Format bevorzugt"
-              ].map((option, index) => (
+              {OPTIONS_Q3.map((option, index) => (
                 <label
                   key={index}
                   className="flex items-start gap-3 cursor-pointer group"
@@ -157,7 +156,7 @@ export default function FeedbackPage() {
           {/* Frage 4 - Textarea mit Linien */}
           <div className="mb-10 sm:mb-12">
             <label className="block font-heading text-base sm:text-lg text-text-main mb-4 sm:mb-6">
-              <span className="text-accent-terra">4.</span> Offenes Feld: Was würden Sie verbessern oder ergänzen?
+              <span className="text-accent-terra">4.</span> Offenes Feld: Lass uns gerne deine Gedanken und Anmerkungen zur Tour hier ... (Optional)
             </label>
 
             <div className="relative">
@@ -172,7 +171,7 @@ export default function FeedbackPage() {
                   minHeight: '192px',
                   paddingTop: '4px',
                 }}
-                placeholder="Ihre Antwort..."
+                placeholder="Deine Gedanken..."
               />
             </div>
           </div>
@@ -196,7 +195,7 @@ export default function FeedbackPage() {
       {/* Navigation */}
       <section className="section-container">
         <div className="text-center py-6 sm:py-8">
-          <Link href="/" className="btn-vintage bg-transparent border border-text-main text-text-main hover:bg-text-main hover:text-bg-base">
+          <Link href="/" className="btn-vintage-outline">
             Zurück zur Startseite
           </Link>
         </div>

@@ -1,114 +1,132 @@
+"use client";
+
 import Link from "next/link";
+import { Accordion } from "@/components/Accordion";
 
 export default function Station3Page() {
+  const accordionItems = [
+    {
+      title: "Verschleierung durch Terminologie",
+      content: (
+        <div className="flow-text-justified">
+          <p className="mb-4">
+            Der Begriff <span className="italic-body">"Künstliche Intelligenz"</span> suggeriert hierbei eine "rein technische" und "nicht natürliche" Technologie und verbirgt die zugrundeliegende menschliche Arbeit und die natürlichen Rohstoffe.
+          </p>
+          <p>
+            Die <span className="font-heading text-accent-terra">Illusion der Autonomie</span>: Die Vorstellung, dass Wissen und Intelligenz vollständig an eine Maschine ausgelagert werden können, wird als streitbar kritisiert, da der Mensch in jeder Phase der Entwicklung präsent bleibt.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Der Globale Süden",
+      content: (
+        <div className="flow-text-justified">
+          <p className="mb-4">
+            Der <span className="italic-body">"Körper"</span> der KI beginnt in den Minen des Globalen Südens, wo Rohstoffe wie Lithium oder Coltan abgebaut werden. Diese harte körperliche Arbeit bildet die materielle Basis für die Hardware, die wir im Globalen Norden nutzen.
+          </p>
+          <p>
+            Damit KI-Systeme <span className="italic-body">"intelligent"</span> wirken, müssen riesige Datenmengen von Menschen vorsortiert und markiert werden (<span className="font-heading text-accent-flora">Data Labeling</span>). Diese Arbeit wird oft in Niedriglohnländer ausgelagert und als <span className="italic-body">"kognitive Sweatshops"</span> bezeichnet.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Der Globale Norden",
+      content: (
+        <div className="flow-text-justified">
+          <p className="mb-4">
+            Während der Globale Süden die ökologischen und sozialen Kosten trägt, liegen die Vorteile primär im Globalen Norden. Die großen Gewinner des KI-Booms sind Tech-Giganten in den USA und China sowie in geringerem Maße Europa.
+          </p>
+          <p>
+            Auch das Design von KI (Stimmen, Aussehen von Robotern) spiegelt oft westliche Ideale wider. <span className="font-heading text-accent-terra">"Whiteness"</span> wird als Norm gesetzt, was dazu führt, dass Menschen im Globalen Süden oder People of Color durch Biases in den Systemen häufiger diskriminiert werden (z. B. bei der Gesichtserkennung).
+          </p>
+        </div>
+      ),
+    },
+  ];
+
   return (
     <div className="w-full">
       {/* Header */}
       <section className="section-container">
         <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-          <span className="font-heading text-sm text-accent-terra tracking-wider uppercase">
-            Station 3
-          </span>
+          <span className="micro-copy text-accent-terra">Station 3</span>
           <div className="h-px flex-1 bg-border-color" />
         </div>
 
-        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-text-main leading-tight mb-8 sm:mb-12 tracking-tight">
-          KI & Pflanzenwelt
+        <h1 className="hero-text text-text-main leading-tight mb-8 sm:mb-12">
+          Die unsichtbaren Gärtner
         </h1>
       </section>
 
       {/* Intro */}
       <section className="section-container">
-        <div className="margin-note">
-          <p className="font-body text-sm">
-            <strong>Ort:</strong> Am Grüngürtel / zwischen Gebäuden
-          </p>
-          <p className="font-body text-sm text-text-main/60 mt-1">
-            Fokus: Pflanzenkenntnis-Apps, Smart Farming, KI-gestützte Biologie
-          </p>
-        </div>
-
-        <div className="content-text drop-cap">
+        <div className="flow-text-justified drop-cap">
           <p className="mb-6">
-            Wer schon einmal eine Pflanze mit einer App identifiziert hat, hat KI als „gartentechnisches Hilfsmittel" erlebt: Ein Foto vom Blatt, ein Klick, seconds später der Name der Art, Familie, Gattung – manchmal sogar Pflegehinweise, Giftigkeit, Verbreitung. Apps wie PlantNet, Flora Incognita, iNaturalist nutzen Bilderkennung, um Pflanzenbestimmung zu demokratisieren: Was früher Botanikern vorbehalten war, ist nun für alle zugänglich.
+            Oft erscheint uns die Künstliche Intelligenz als autonom. Ein System, das wie durch Zauberei lernt. Doch die Forscherin <span className="font-heading text-accent-terra">Kate Crawford</span> erinnert uns daran: KI ist weder rein künstlich noch von Natur aus intelligent. Hinter jedem <span className="italic-body">"smarten"</span> Algorithmus verbirgt sich eine gigantische Anzahl von Menschen. In der Fachwelt spricht man von <span className="font-heading text-accent-flora">"Ghost Work"</span> (Geisterarbeit).
           </p>
 
           <p className="mb-6">
-            Aber diese Entwicklung ist nicht so simpel, wie sie scheint. Die Apps lernen aus Millionen von Bildern, die von Menschen gelabelt wurden – sie reproduzieren also menschliches (und oft westliches, koloniales) Wissen. Eine Pflanze ist für die App ein Objekt, ein Datensatz, ein Muster aus Pixeln – nicht ein Lebewesen mit Ökologie, Geschichte, kultureller Bedeutung. Die App weiß nichts über die Beziehung dieser Pflanze zu Insekten, zu Boden, zu Klima, zu Menschen – sie weiß nur, wie sie „aussieht".
+            Stellen Sie sich diesen Garten vor. Damit er so ordentlich aussieht, muss jemand das Unkraut jäten. In der Welt der KI bedeutet das: <span className="font-semibold">Data Labeling</span>. Millionen von Menschen im Globalen Süden sitzen vor Bildschirmen und markieren Bilder, damit ein Auto lernt, was ein Baum ist oder was ein Mensch.
           </p>
 
           <p className="mb-6">
-            In der Landwirtschaft geht KI noch weiter: Precision Agriculture steuert Düngung, Bewässerung, Ernte algorithmisch; Drohnen scannen Felder auf Schädlinge, Nährstoffmangel, Wasserverbrauch; Smart Sensoren messen Feuchtigkeit, pH-Wert, Temperatur im Boden. KI wird zu einer „extended organ" der Pflanze – ein externes Nervensystem, das Wahrnehmung, Analyse, Reaktion übernimmt. Was bedeutet das für die Pflanze selbst? Für ihre „agency", ihre Autonomie, ihre Evolution?
+            Denn KI ist ein System, welches tief in physischen Prozessen und menschlicher Arbeit verwurzelt ist.
           </p>
         </div>
 
         <div className="divider" />
       </section>
 
-      {/* KI als „Extended Organ" */}
+      {/* Accordion Sections */}
       <section className="section-container">
-        <h2 className="font-heading text-xl sm:text-2xl text-text-main mb-6 sm:mb-8 tracking-tight">
-          KI als „Extended Organ"
-        </h2>
-
-        <div className="content-text">
-          <p className="mb-6">
-            Der Philosoph Andy Clark argumentiert, dass Menschen schon immer „extended minds" haben – Werkzeuge, Sprachen, Notizen, Smartphones, die kognitive Prozesse auslagern, erweitern, transformieren. Warum sollte das nicht auch für Pflanzen gelten? Eine Pflanze hat Wurzeln, Blätter, Stängel – aber sie hat keine Augen, keine Ohren, kein zentrales Nervensystem. KI könnte eine Art „künstliches Sinnesorgan" werden: Ein Sensor im Boden misst Feuchtigkeit, eine Drohne oben überm Feld erkennt Stress, ein Algorithmus berechnet optimalen Erntezeitpunkt.
-          </p>
-
-          <p className="mb-6">
-            Aber diese Erweiterung ist nicht neutral: Wer kontrolliert den Sensor? Wer schreibt den Algorithmus? Wer profitiert von den Daten? Ein Bauernhof, der KI-gestützte Precision Agriculture nutzt, wird abhängig von Software-Updates, von Datenlizenzierungen, von tech companies. Die Pflanze wird zum Datengenerator – ihr Wachstum, ihr Zustand, ihre Gesundheit werden commodifiziert. Das wirft Fragen nach ownership, nach agency, nach power auf: Wenn KI entscheidet, wann gegossen wird, wer ist dann der „Gärtner"? Der Mensch? Der Algorithmus? Die Pflanze selbst?
-          </p>
-
-          <p className="mb-6">
-            Auch in der Forschung verändert KI die Beziehung zwischen Mensch und Pflanze: Pflanzenforschung nutzt Machine Learning, um Genomdaten zu analysieren, um Kreuzungen vorherzusagen, um Wuchsformen zu simulieren. KI kann Millionen von Genomsequenzen durchsuchen und Muster finden, die Menschen nie entdecken würden – sie kann „denken" wie eine Pflanze,或者说 sie kann Pflanzen in code „übersetzen". Aber diese Übersetzung ist eine Interpretation: KI projiziert menschliche Konzepte (Muster, Optimierung, Kontrolle) auf pflanzliche Realität – und produziert damit neue Bilder von „Natur", die nicht mehr „draußen" sind, sondern in Algorithmen verkörpert.
-          </p>
-        </div>
+        <Accordion items={accordionItems} />
 
         <div className="divider" />
       </section>
 
-      {/* Theoretischer Hintergrund */}
+      {/* Lösungen */}
       <section className="section-container">
-        <h2 className="font-heading text-xl sm:text-2xl text-text-main mb-6 sm:mb-8 tracking-tight">
-          Theoretischer Hintergrund
+        <h2 className="section-title-with-border mb-6 sm:mb-8">
+          Mögliche Lösungsansätze
         </h2>
+
+        <div className="bordered-box bg-accent-flora/5 mb-6">
+          <p className="font-body text-base text-text-main/80 italic-body mb-4">
+            Große Teile der KI-Industrie sind in ihrer derzeitigen Form weder wünschenswert noch akzeptabel.
+          </p>
+          <p className="font-body text-sm text-text-main/60">
+            Nach Anne Burkhardt
+          </p>
+        </div>
 
         <div className="fact-box">
-          <div className="space-y-4">
-            <div className="border-b border-border-color pb-3">
-              <span className="font-heading text-xs text-accent-terra uppercase tracking-wider block mb-1">
-                Jane Bennett – Vibrant Matter
+          <div className="space-y-5">
+            <div className="border-b border-border-color pb-4">
+              <span className="fact-heading block mb-2">
+                1. Politische und strukturelle Maßnahmen
               </span>
-              <p className="font-body text-sm text-text-main/80">
-                Materie ist nicht passiv; Dinge haben agency, Vitalität, Handlungsmacht. Auch Pflanzen, auch Algorithmen.
+              <p className="font-body text-base sm:text-lg text-text-main">
+                Regulierung von Big Tech, Boykott bestimmter Technologien, Aufklärung, die ein Bewusstsein für die Problematik schärfen soll.
               </p>
             </div>
 
-            <div className="border-b border-border-color pb-3">
-              <span className="font-heading text-xs text-accent-terra uppercase tracking-wider block mb-1">
-                Natasha Myers – Photosynthesis
+            <div className="border-b border-border-color pb-4">
+              <span className="fact-heading block mb-2">
+                2. Epistemische und wissenschaftliche Lösungen
               </span>
-              <p className="font-body text-sm text-text-main/80">
-                Pflanzenwahrnehmung und Kommunikation als Modell für nicht-anthropozentrische Epistemologie.
-              </p>
-            </div>
-
-            <div className="border-b border-border-color pb-3">
-              <span className="font-heading text-xs text-accent-terra uppercase tracking-wider block mb-1">
-                Donna Haraway – Staying with the Trouble
-              </span>
-              <p className="font-body text-sm text-text-main/80">
-                „Kinship" mit Nicht-Menschen; Koexistenz statt Dominanz; „Situated Knowledges" auch für KI-Natur-Verhältnisse.
+              <p className="font-body text-base sm:text-lg text-text-main">
+                Marginalisierte Perspektiven und Wissensbestände gezielt <span className="italic-body">"annehmen"</span> und von ihnen lernen. Stärkung von Organisationen wie <span className="font-heading text-accent-flora">Black in AI</span> oder <span className="font-heading text-accent-flora">LatinX in AI</span>, um die Sichtbarkeit und Teilhabe unterrepräsentierter Gruppen in der Forschung zu erhöhen.
               </p>
             </div>
 
             <div>
-              <span className="font-heading text-xs text-accent-terra uppercase tracking-wider block mb-1">
-                Andy Clark – Extended Mind
+              <span className="fact-heading block mb-2">
+                3. Aktivismus und Solidarität
               </span>
-              <p className="font-body text-sm text-text-main/80">
-                Kognitive Prozesse finden nicht nur im Gehirn statt – Werkzeuge, Medien, Techniken erweitern den Geist.
+              <p className="font-body text-base sm:text-lg text-text-main">
+                Grassroots-Bewegungen: Netzwerke wie <span className="font-heading text-accent-flora">Tierra Común</span> oder das feministische Kollektiv <span className="font-heading text-accent-flora">Coding Rights</span> arbeiten aktiv an der Aufdeckung von Diskriminierung und der Kreation gerechterer technologischer Visionen.
               </p>
             </div>
           </div>
@@ -117,10 +135,24 @@ export default function Station3Page() {
         <div className="divider" />
       </section>
 
+      {/* Zitat Box */}
+      <section className="section-container">
+        <div className="quote-box">
+          <p className="text-xl sm:text-2xl lg:text-3xl">
+            Hinter jedem "smarten" Algorithmus verbirgt sich eine gigantische Anzahl von Menschen.
+          </p>
+          <cite className="font-body text-sm text-text-main/60 not-italic mt-4 block">
+            — Kate Crawford, Ghost Work
+          </cite>
+        </div>
+
+        <div className="divider" />
+      </section>
+
       {/* Navigation Buttons */}
       <section className="section-container">
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center py-6 sm:py-8">
-          <Link href="/station-2" className="btn-vintage bg-transparent border border-text-main text-text-main hover:bg-text-main hover:text-bg-base">
+          <Link href="/station-2" className="btn-vintage-outline">
             Zurück
           </Link>
           <Link href="/station-4" className="btn-vintage">

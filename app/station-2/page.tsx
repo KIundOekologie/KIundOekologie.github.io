@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { ChipXRay } from "@/components/ChipXRay";
 
 export default function Station2Page() {
   return (
@@ -6,83 +9,156 @@ export default function Station2Page() {
       {/* Header */}
       <section className="section-container">
         <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-          <span className="font-heading text-sm text-accent-terra tracking-wider uppercase">
-            Station 2
-          </span>
+          <span className="micro-copy text-accent-terra">Station 2</span>
           <div className="h-px flex-1 bg-border-color" />
         </div>
 
-        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-text-main leading-tight mb-8 sm:mb-12 tracking-tight">
-          Campus als Garten
+        <h1 className="hero-text text-text-main leading-tight mb-8 sm:mb-12">
+          Körperliche KI
         </h1>
       </section>
 
-      {/* Campus-Intro */}
+      {/* Intro */}
       <section className="section-container">
-        <div className="margin-note">
-          <p className="font-body text-sm">
-            <strong>Ort:</strong> Vor dem Hauptgebäude des Cyber Valley Campus
-          </p>
-          <p className="font-body text-sm text-text-main/60 mt-1">
-            Metapher: Der Campus selbst als „Digitaler Garten" – ein Ort, an dem Natur und Code verschränkt sind
-          </p>
-        </div>
-
-        <div className="content-text drop-cap">
+        <div className="flow-text-justified drop-cap">
           <p className="mb-6">
-            Das Wort Campus stammt vom lateinischen „campus" – das Feld. Ursprünglich bezeichnete es ein offenes Land, eine Ebene. In der römischen Antike war der Campus Martius ein Platz außerhalb der Stadtmauern, ein Ort für militärische Übungen, aber auch für Versammlungen, Wahlen, kulturelle Veranstaltungen. Campus war also nie reine Natur; es war immer ein Raum, in dem soziale, politische und militärische Praktiken stattfanden.
+            Wenn wir über Künstliche Intelligenz sprechen, nutzen wir oft Metaphern des Ätherischen: die Cloud, der virtuelle Raum, das drahtlose Netz. Doch der Medienarchäologe <span className="font-heading text-accent-terra">Jussi Parikka</span> lehrt uns einen anderen Blick: <span className="font-normal">Technologie ist Geologie.</span> Jedes Rechenzentrum ist ein Archiv seltener Erden.
           </p>
 
           <p className="mb-6">
-            Heute ist „Campus" zur Bezeichnung für Universitätsgebiete geworden – und diese sind bewusst „gärtnerisch" gestaltet: Rasenflächen, Baumalleen, Sitzgruppen im Freien, Wege, die zum Flanieren einladen. Der moderne Campus simuliert Natur, um Konzentration, Kreativität, Wohlbefinden zu fördern. Gleichzeitig ist er hochtechnologisiert: WLAN flutet die Außenbereiche, Sensoren steuern Licht und Temperatur, Smart Buildings regeln Energie, Lüftung, Raumbelegung.
-          </p>
-
-          <p className="mb-6">
-            Der Cyber Valley Campus ist ein extremes Beispiel dieser Verschränkung: Hier wird an KI geforscht, während um das Gebäude herum Bäume wachsen, Vögel singen, Insekten durch die Luft flirren. Die Forschung findet in klimatisierten Räumen statt, während draußen Wetter, Jahreszeiten, ökologische Prozesse ihren Lauf nehmen. Beides hängt zusammen: Die Gebäude brauchen Energie, die Server kühlung, die Menschen frische Luft, grüne Ausblicke, Pausen im Freien.
+            Die Cloud ist dabei eine der erfolgreichsten Metaphern unserer Zeit, weil sie uns glauben lässt, Information sei gewichtslos, getrennt von unserer Welt. Doch das Gegenteil ist wahr. Künstliche Intelligenz hat einen massiven, physischen Körper. Dieser Körper besteht aus Silizium-Minen in China, Lithium-Feldern in Chile und riesigen Rechenzentren. In der Kulturtheorie spricht man von der <span className="font-heading text-accent-flora">Geologie der Medien</span>: Jedes Smartphone, jede KI ist ein Stück umgeformte Erde.
           </p>
         </div>
 
         <div className="divider" />
       </section>
 
-      {/* Der Garten als Metapher */}
+      {/* Medianatures */}
       <section className="section-container">
-        <h2 className="font-heading text-xl sm:text-2xl text-text-main mb-6 sm:mb-8 tracking-tight">
-          Der Garten als Metapher
+        <h2 className="section-title-with-border mb-6 sm:mb-8">
+          Medianatures
         </h2>
 
-        <div className="content-text">
+        <div className="flow-text-justified">
           <p className="mb-6">
-            Der Garten ist seit jeher ein Symbol für die Beziehung zwischen Mensch und Natur. Im antiken Griechenland war der „Garten des Epicur" ein Ort der Philosophie – ein Rückzugsort für Gespräche, Reflexion, Gemeinschaft. Im christlichen Mittelalter wurde der Garten zum Paradies-Garten, zum Bild für den ursprünglichen Zustand der Welt vor dem Sündenfall. In der Renaissance wurde der Garten zum geometrischen Kunstwerk, zur Manifestation menschlicher Kontrolle über Natur (französische Barockgärten). In der Romantik wurde der Garten zum naturnahen, „wilden" Garten, zum Ort der Sentimentalität, der Melancholie.
+            In Anlehnung an Donna Haraways <span className="italic-heading">„Naturecultures"</span> beschreibt Parikkas Begriff die totale Verflechtung von Technik und Natur. Es gibt keine Trennung mehr zwischen der <span className="italic-body">„physischen Welt"</span> und der <span className="italic-body">„digitalen Welt"</span>. Umgekehrt gilt: Die Erde ermöglicht Medien überhaupt erst – durch Mineralien, Materialien, geophysikalische Bedingungen.
+          </p>
+
+          <blockquote className="quote-box">
+            <p className="text-xl sm:text-2xl lg:text-3xl text-text-main">
+              And conversely, it is the earth that provides for media and enables it: the minerals, materials off the ground, the affordances of its geophysical reality that make technical media happen. This is the double bind – which I call the sphere of medianatures.
+            </p>
+            <cite className="font-body text-sm text-text-main/60 not-italic mt-4 block">
+              — Jussi Parikka
+            </cite>
+          </blockquote>
+        </div>
+
+        <div className="divider" />
+      </section>
+
+      {/* Die mineralische Basis */}
+      <section className="section-container">
+        <h2 className="section-title-with-border mb-6 sm:mb-8">
+          Die mineralische Basis der Hardware
+        </h2>
+
+        <div className="flow-text-justified mb-8">
+          <p className="mb-6">
+            Digitale Technologie existiert nicht im luftleeren Raum, sondern basiert auf einer massiven Mobilisierung der Erdkruste.
+          </p>
+        </div>
+
+        <div className="fact-box">
+          <div className="space-y-4">
+            <div className="border-b border-border-color pb-4">
+              <span className="fact-heading block mb-2">1. Chemische Komplexität</span>
+              <p className="font-body text-base sm:text-lg text-text-main">
+                Ein moderner Computerchip besteht aus bis zu <span className="font-semibold text-accent-flora">60 verschiedenen Elementen</span>, darunter Edelmetalle wie Gold und Silber sowie kritische Stoffe wie Indium, Gallium und Seltene Erden.
+              </p>
+            </div>
+
+            <div className="border-b border-border-color pb-4">
+              <span className="fact-heading block mb-2">2. Geologische Extrakte</span>
+              <p className="font-body text-base sm:text-lg text-text-main">
+                Jedes Smartphone ist ein <span className="italic-body">"geologisches Extrakt"</span>. Wenn wir ein Gerät in der Tasche tragen, tragen wir faktisch Stücke von Afrika (wie Coltan aus dem Kongo) oder Zink aus Alaska bei uns.
+              </p>
+            </div>
+
+            <div>
+              <span className="fact-heading block mb-2">3. Mining vs. Data Mining</span>
+              <p className="font-body text-base sm:text-lg text-text-main">
+                Während wir oft über <span className="italic-body">"Data Mining"</span> als Metapher sprechen, basiert die Existenz dieser Daten auf tatsächlichem Bergbau.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p className="font-body text-base text-text-main/80 italic-body text-center mt-6 mb-4">
+          Die Materialität des Digitalen ist ein Thema von höchster Dringlichkeit, das unser herkömmliches Verständnis von Technologie, als etwas flüchtiges oder virtuelles, grundlegend infrage stellt.
+        </p>
+
+        <div className="divider" />
+      </section>
+
+      {/* Gedankenexperiment */}
+      <section className="section-container">
+        <h2 className="section-title-with-border mb-6 sm:mb-8">
+          Gedankenexperiment: Die Telegrafie
+        </h2>
+
+        <div className="flow-text-justified">
+          <p className="mb-6">
+            Um die fundamentale Verflechtung von Technologie und Natur zu begreifen, lohnt ein Blick auf das 19. Jahrhundert und auf die <span className="font-semibold">Telegrafie</span>, das erste globale Telekommunikationsnetzwerk.
           </p>
 
           <p className="mb-6">
-            Der „Digitale Garten" als Metapher greift diese Tradition auf, verschiebt aber die Akzente: Es geht nicht mehr nur um die Beziehung zwischen Mensch und Natur, sondern um die Dreiecksbeziehung zwischen Mensch, Natur und Technik. KI als neue „Gartentechnik"? Daten als „Samen"? Algorithmen als „Wachstumsregeln"? Diese Übertragungen sind nicht bloß metaphorisch – sie verweisen auf reale Verbindungen: KI wird in der Landschaftsarchitektur eingesetzt, um Wasserverbrauch zu optimieren; Smart Gardens nutzen Sensoren, um Feuchtigkeit, Licht, Nährstoffe zu messen; precision agriculture steuert Düngung, Ernte, Anbau algorithmisch.
+            In ihrer Grundfunktion basierte die Telegrafie auf der Übertragung elektrischer Impulse über weite geografische Distanzen. Ein klassischer Stromkreis erfordert hierfür physisch zwei Leiter: einen für den Hinweg und einen für den Rückweg des Signals. Um jedoch die immensen infrastrukturellen und ökonomischen Hürden zu überwinden, Tausende Kilometer Kabel verlegen zu müssen, bedienten sich die Ingenieure einer ebenso pragmatischen wie konzeptionell radikalen Lösung: der sogenannten <span className="font-heading text-accent-flora">Erdrückleitung</span>.
           </p>
 
           <p className="mb-6">
-            Gleichzeitig ist der Garten auch ein Ort der Kooperation: Pflanzen, Insekten, Bodenorganismen, Menschen, Werkzeuge, Techniken bilden ein Geflecht aus Beziehungen. Der Begriff des „Gartens" erinnert daran, dass Natur nicht „draußen" ist, sondern immer schon mit menschlicher Praxis verschränkt – und dass Technik nicht „jenseits" von Natur steht, sondern Teil von Ökologien sein kann.
+            An den jeweiligen Enden der Telegrafenstationen wurden Metallplatten im Boden vergraben. Der elektrische Impuls nutzte dadurch die natürliche Leitfähigkeit unseres Planeten, die sogenannten <span className="italic-body">„tellurischen Ströme"</span>, um wieder zum Ursprungsort zurückzufließen und den Stromkreis zu schließen. Man sparte sich schlichtweg das zweite Kabel, indem man den Planeten selbst als Leiter einsetzte.
+          </p>
+
+          <p className="mb-6">
+            In genau diesem Moment der Technologiegeschichte wandelte sich die Erde von einem passiven Untergrund zu einem <span className="font-semibold">aktiven technologischen Bauteil</span>. In der kulturwissenschaftlichen Betrachtung erscheint die Telegrafie somit als das erste technologische Nervensystem des Planeten: Die oberirdischen Drähte bildeten die Nervenfasern, doch der planetare <span className="italic-body">„Körper"</span>, der den Kreislauf vollendete und die Signale trug, war die Erde selbst.
+          </p>
+        </div>
+
+        <div className="bordered-box bg-accent-flora/5 my-6">
+          <p className="font-heading text-lg text-text-main mb-3">
+            Hier offenbart sich die absolute Verschmelzung von Technik und Geosphäre zu einem Hybriden.
+          </p>
+          <p className="font-body text-base text-text-main/80">
+            Ein Telegrafensystem bestand faktisch zur Hälfte aus technologischen Artefakten (Batterien, Kupferdrähten, Schaltern) und zur Hälfte aus geologischen Gegebenheiten (Bodenbeschaffenheit, Grundwasser, Mineralien).
+          </p>
+        </div>
+
+        <div className="flow-text-justified">
+          <p className="mb-6">
+            Dieses historische Paradigma veranschaulicht präzise Parikkas Konzept der Medianatures: Die Erde ist nicht nur ein passives Reservoir, aus dem wir Ressourcen für unsere Hardware abbauen. Sie war und ist das fundamentale physische Medium, das unsere technologischen Netzwerke – von der frühen Telegrafie bis zur heutigen globalen Infrastruktur der Künstlichen Intelligenz – überhaupt erst operativ macht.
           </p>
         </div>
 
         <div className="divider" />
       </section>
 
-      {/* Praktische Aufgabe */}
+      {/* Interaktive Aufgabe */}
       <section className="section-container">
-        <div className="fact-box bg-accent-flora/5">
-          <h3 className="font-heading text-base sm:text-lg text-text-main mb-3">
-            Beobachtungsaufgabe
-          </h3>
-          <p className="font-body text-sm sm:text-base text-text-main/80 mb-4">
-            Verweilen Sie einen Moment am aktuellen Standort und achten Sie auf:
+        <h3 className="section-title mb-4 sm:mb-6">
+          Der Röntgenblick
+        </h3>
+
+        <div className="margin-note mb-4">
+          <p className="font-body text-sm">
+            Schätzfrage: Wie viele chemische Elemente können in einem modernen Chip stecken?
           </p>
-          <ul className="font-body text-sm sm:text-base text-text-main/70 space-y-2 ml-4">
-            <li>• Welche „natürlichen" Elemente sehen Sie? (Bäume, Gräser, Insekten, Vögel, Boden)</li>
-            <li>• Welche „technischen" Elemente fallen auf? (Gebäude, WLAN, Lampen, Kameras, Sensoren)</li>
-            <li>• Wo überschneiden sich beide Bereiche? (Kabel im Rasen, Smart-Home-Steckdosen, PV-Module auf Dächern)</li>
-          </ul>
+          <p className="font-body text-xs text-text-main/60 mt-1">
+            Antwort: Bis zu ~60
+          </p>
         </div>
+
+        <ChipXRay />
 
         <div className="divider" />
       </section>
@@ -90,7 +166,7 @@ export default function Station2Page() {
       {/* Navigation Buttons */}
       <section className="section-container">
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center py-6 sm:py-8">
-          <Link href="/station-1" className="btn-vintage bg-transparent border border-text-main text-text-main hover:bg-text-main hover:text-bg-base">
+          <Link href="/station-1" className="btn-vintage-outline">
             Zurück
           </Link>
           <Link href="/station-3" className="btn-vintage">

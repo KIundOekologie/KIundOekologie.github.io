@@ -25,8 +25,8 @@ const config: Config = {
         'hero-lg': ['6rem', { lineHeight: '1.05', letterSpacing: '-0.03em', fontWeight: '400' }],
         'section-title': ['2rem', { lineHeight: '1.3', letterSpacing: '0.01em', fontWeight: '400' }],
         'section-title-lg': ['2.5rem', { lineHeight: '1.25', letterSpacing: '0.005em', fontWeight: '400' }],
-        'micro': ['0.75rem', { lineHeight: '1.4', letterSpacing: '0.05em', fontWeight: '500' }],
-        'micro-lg': ['0.875rem', { lineHeight: '1.4', letterSpacing: '0.05em', fontWeight: '500' }],
+        'micro': ['0.875rem', { lineHeight: '1.4', letterSpacing: '0.05em', fontWeight: '500' }],
+        'micro-lg': ['1rem', { lineHeight: '1.4', letterSpacing: '0.05em', fontWeight: '500' }],
       },
       maxWidth: {
         'readable': '65ch',
