@@ -7,7 +7,7 @@ export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-bg-base/95 backdrop-blur-sm border-b border-border-color">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-bg-base/70 backdrop-blur-glass border-b border-border-color/50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Titel */}

@@ -1,0 +1,139 @@
+Startseite:
+Im Rahmen dieses Projektmoduls dient der Begriff des „Digitalen Gartens“ als zentrale kulturtheoretische Leitmetapher und Erkenntnismodell. Historisch und kulturwissenschaftlich betrachtet, markiert der Garten keinen unberührten Naturraum, sondern fungiert als klassische Kontaktzone, in der Natur und menschliche Kulturtechnik aufeinandertreffen. Natur wird im Garten nicht sich selbst überlassen, sondern durch intentionale menschliche Eingriffe (Werkzeuggebrauch, architektonische Planung und Züchtung) geformt und kultiviert. Der Garten ist somit ein inhärent hybrider Raum, der die strikte Dichotomie von „Natur“ und „Kultur“ auflöst. 
+Übertragen auf den Forschungsstandort Cyber Valley und die Entwicklung Künstlicher Intelligenz ermöglicht dieses Bild einen entscheidenden Perspektivwechsel: An diesem Ort werden primär Datennetze, Algorithmen und Rechenmodelle „kultiviert“. Der gängige Diskurs um Digitalisierung und KI nutzt oft Metaphern des Ätherischen und Immateriellen (wie z. B. die Cloud), die eine Entkopplung von der physischen Welt suggerieren. Die Metapher des Gartens korrigiert dieses Narrativ. So wie ein physischer Garten untrennbar mit dem Boden, dem Wasser und den Nährstoffen verbunden ist, in denen er wurzelt, ist auch die digitale Kultivierung im Cyber Valley tief mit materiellen und geologischen Prozessen verbunden. Die vermeintlich immaterielle digitale Arbeit manifestiert sich in massiver ökologischer Materialität, vom Abbau seltener Erden für Hardware über den enormen Energie- und Wasserverbrauch von Rechenzentren bis hin zu den direkten Auswirkungen auf das globale Klimasystem.
+Die konzipierte digitale Tour greift diese theoretische Prämisse didaktisch auf. Die Besucher*innen bewegen sich physisch durch reale Landschaftselemente (Wiesen, Waldrand) in unmittelbarer Nähe zur Hochtechnologie-Infrastruktur. Angeleitet durch das Smartphone lesen und interagieren sie an spezifischen Stationen mit Texten, die aus der Perspektive des Ecocriticism und der Medienökologie beleuchten, wie die digitale Welt eben jene physische Natur durchdringt und formt (und andersherum).  
+
+Ziel der Tour ist es, die oft unsichtbare Materialität und die ökologischen Verflechtungen von KI am konkreten Ort greifbar zu machen und zu reflektieren, wie sich Natur und Technik im Anthropozän zunehmend zu neuen, untrennbaren hybriden Systemen verschränken. 
+
+
+Station 1: Begriffe und Theorien
+-	Anthropozän: 
+Kernidee: Das Anthropozän (von altgriechisch ánthropos „Mensch“ und kainós „neu“) ist ein vorgeschlagenes Erdzeitalter, in dem der Mensch zum entscheidenden geologischen Faktor geworden ist. Der Begriff verdeutlicht, dass menschliche Aktivitäten die biologischen, geologischen und atmosphärischen Prozesse der Erde mittlerweile stärker prägen als natürliche Kräfte. 
+Namensgeber: Der Begriff wurde im Jahr 2000 vom Nobelpreisträger Paul Crutzen populär gemacht.
+Geologischer Status: Es ist (noch) keine offizielle Epoche. Ein Fachgremium lehnte die Aufnahme in die Erdzeitskala im März 2024 ab; wir leben offiziell weiterhin im Holozän. 
+Startpunkt: Meist wird das Jahr 1950 („Große Beschleunigung“) oder der Beginn der Industriellen Revolution (um 1800) genannt.
+Nachweise: Das Anthropozän wird unter anderem durch bleibende Spuren in den Erdschichten definiert, die auch in Millionen von Jahren noch nachweisbar sein werden. Dazu zählen Hinterlassenschaften wie Plastik, Radioaktivität, Beton und der massive Anstieg von CO2, die in den Bodenschichten dauerhaft nachweisbar bleiben. 
+
+-	Trennung von Mensch und Natur - und ihre Infragestellung 
+Im alltäglichen Sprachgebrauch fällt die Unterscheidung zwischen Natur und Kultur meist leicht. Der Baum im Garten, die Blumenwiese, das ist Natur. Das Fenster, welches mich davon trennt oder das Smartphone, dass ich zum Bestimmen der Blumen nutze, gehört zu dem Bereich der vom Menschen hergestellten Dinge und somit zur Kultur. Diese Unterscheidend ist eine Selbstverständlichkeit, die unsern Alltag bestimmt und unser Wissen strukturiert. So stellt man den Geisteswissenschaften, die sich mit Geschichte, Kunst, Ideen und somit den Produkten des menschlichen Geistes befassen, traditionell die Naturwissenschaften gegenüber. 
+Dahinter steht die Annahme, dass sich Natur und Kultur in ihrem Wesen unterscheiden, zwei ontologische Kategorien, unterschiedliche Existenzweisen bezeichnen. 
+Die Debatte um das Anthropozän stellt diese Trennung jedoch in Frage: „Wenn die Menschheit selbst zur Naturgewalt geworden ist und das Erdsystem in seiner Gesamtheit verändert, dann verliert die Scheidung von Natur und Kultur ihren Sinn“.  Das Ersetzen natürlicher Umwelten durch Künstliche zählte auch Anthony Giddens zu einem Charakteristikum der Moderne.  Deutlich wird dies im Umweltschutz, der Natur meist nicht als Natur bewahrt sondern vielmehr auf das Management von Prozessen hinausläuft. Hier vermischen sich Natürliches und Technisch-Kulturelles zunehmend in Form von Krötentunneln, Schadstoffgrenzwerten und Wildbrücken. Merkmal der Gegenwart ist somit nicht (nur) ein Verschwinden von Natur, sondern eine Ausbreitung des „Hybriden“. 
+
+Interaktive Aufgabe: 
+Begriffe sortieren -> Welche dieser Dinge ordnest du spontan der Natur zu und welche der Kultur?“
+Beispiele: Streuobstwiese, Smartphone, Blumen, CO₂, Wildbrücke, Datenzentrum
+•	Ein "Drag & Drop"-Spektrum (Slider).
+•	Aufgabe: Auf dem Smartphone erscheint ein Balken: Links steht "100% Natur", rechts "100% Kultur/Technik". Nacheinander tauchen Begriffe auf, die der/die User*in auf dem Spektrum platzieren muss: Ein Apfel aus dem Supermarkt, ein Krötentunnel, ein Algorithmus, CO2 in der Luft, das Cyber Valley.
+•	Auflösung/Vibe: Sobald alle Begriffe platziert sind, verschwindet der Balken und die Begriffe fallen in einen "Hybrid-Pool" zusammen. Text-Pop-up: "Im Anthropozän verschwindet die Trennlinie. Alles ist hybrid."
+
+
+Station 2: Körperliche KI
+Wenn wir über Künstliche Intelligenz sprechen, nutzen wir oft Metaphern des Ätherischen: die Cloud, der virtuelle Raum, das drahtlose Netz. Doch der Medienarchäologe Jussi Parikka lehrt uns einen anderen Blick: Technologie ist Geologie. Jedes Rechenzentrum ist ein Archiv seltener Erden. 
+Die Cloud ist dabei eine der erfolgreichsten Metaphern unserer Zeit, weil sie uns glauben lässt, Information sei gewichtslos, getrennt von unserer Welt. Doch das Gegenteil ist wahr. Künstliche Intelligenz hat einen massiven, physischen Körper. Dieser Körper besteht aus Silizium-Minen in China, Lithium-Feldern in Chile und riesigen Rechenzentren. In der Kulturtheorie spicht man von der Geologie der Medien: Jedes Smartphone, jede KI ist ein Stück umgeformte Erde.  
+Medianatures: In Anlehnung an Donna Haraways „Naturecultures“ beschreibt Parikkas Begriff die totale Verflechtung von Technik und Natur.  Es gibt keine Trennung mehr zwischen der „physischen Welt“ und der „digitalen Welt“. Umgekehrt gilt: Die Erde ermöglicht Medien überhaupt erst - durch Mineralien, Materialien, geophysikalische Bedingungen. 
+
+And conversely, it is the earth that provides for media and enables it:
+the minerals, materials of(f ) the ground, the affordances of its geophysical reality that make technical media happen. Besides the logic of ordering, we have the materiality of the uncontained, and the providing, that is
+constantly in tension with the operations of framing. This is the double bind - 
+which I call the sphere of medianatures. 
+
+1. Die mineralische Basis der Hardware
+Digitale Technologie existiert nicht im luftleeren Raum, sondern basiert auf einer massiven Mobilisierung der Erdkruste.
+2.Chemische Komplexität: Ein moderner Computerchip besteht aus bis zu 60 verschiedenen Elementen, darunter Edelmetalle wie Gold und Silber sowie kritische Stoffe wie Indium, Gallium und Seltene Erden. 
+3.Geologische Extrakte: Jedes Smartphone ist ein „geologisches Extrakt“. Wenn wir ein Gerät in der Tasche tragen, tragen wir faktisch Stücke von Afrika (wie Coltan aus dem Kongo) oder Zink aus Alaska bei uns. 
+3.Mining vs. Data Mining: Während wir oft über „Data Mining“ als Metapher sprechen, basiert die Existenz dieser Daten auf tatsächlichem Bergbau. 
+
+Die Materialität des Digitalen ist ein Thema von höchster Dringlichkeit, dass unser herkömmliches Verständnis von Technologie, als etwas flüchtiges oder virtuelles grundlegend infrage stellt. 
+
+
+Gedankenexperiment:
+Um die fundamentale Verflechtung von Technologie und Natur zu begreifen, lohnt ein Blick auf das 19. Jahrhundert und auf die Telegrafie, das erste globale Telekommunikationsnetzwerk.
+In ihrer Grundfunktion basierte die Telegrafie auf der Übertragung elektrischer Impulse über weite geografische Distanzen. Ein klassischer Stromkreis erfordert hierfür physisch zwei Leiter: einen für den Hinweg und einen für den Rückweg des Signals. Um jedoch die immensen infrastrukturellen und ökonomischen Hürden zu überwinden, Tausende Kilometer Kabel verlegen zu müssen, bedienten sich die Ingenieure einer ebenso pragmatischen wie konzeptionell radikalen Lösung: der sogenannten Erdrückleitung.
+An den jeweiligen Enden der Telegrafenstationen wurden Metallplatten im Boden vergraben. Der elektrische Impuls nutze dadurch die natürliche Leitfähigkeit unseres Planeten, die sogenannten „tellurischen Ströme“, um wieder zum Ursprungsort zurückzufließen und den Stromkreis zu schließen. Man sparte sich schlichtweg das zweite Kabel, indem man den Planeten selbst als Leiter einsetzte.
+n genau diesem Moment der Technologiegeschichte wandelte sich die Erde von einem passiven Untergrund zu einem aktiven technologischen Bauteil. In der kulturwissenschaftlichen Betrachtung erscheint die Telegrafie somit als das erste technologische Nervensystem des Planeten: Die oberirdischen Drähte bildeten die Nervenfasern, doch der planetare „Körper“, der den Kreislauf vollendete und die Signale trug, war die Erde selbst.
+Hier offenbart sich die absolute Verschmelzung von Technik und Geosphäre zu einem Hybriden. Ein Telegrafensystem bestand faktisch zur Hälfte aus technologischen Artefakten (Batterien, Kupferdrähten, Schaltern) und zur Hälfte aus geologischen Gegebenheiten (Bodenbeschaffenheit, Grundwasser, Mineralien).
+Dieses historische Paradigma veranschaulicht präzise Parikkas Konzept der Medianatures: Die Erde ist nicht nur ein passives Reservoir, aus dem wir Ressourcen für unsere Hardware abbauen. Sie war und ist das fundamentale physische Medium, das unsere technologischen Netzwerke – von der frühen Telegrafie bis zur heutigen globalen Infrastruktur der Künstlichen Intelligenz – überhaupt erst operativ macht.
+
+Interaktive Aufgabe: Schätzfrage -> Wie viele chemische Elemente können in einem modernen Chip stecken?“ (Antwort: bis zu ~60) 
+•	Der Röntgenblick (Tap-to-Reveal).
+•	Aufgabe: Auf dem Bildschirm ist ein hochauflösendes, glänzendes Bild eines Mikrochips oder Smartphones zu sehen.
+•	Call-to-Action: "Tippe auf verschiedene Stellen des Chips, um seine geologische Herkunft freizulegen."
+•	Effekt: Tippt man darauf, erscheinen Pop-ups mit Linien auf einer Weltkarte: Lithium (Chile) – Wasserverbrauch: enorm. / Coltan (Kongo) – Gefördert unter oft prekärsten Bedingungen. / Gold (China).
+
+
+
+Station 3: Die unsichtbaren Gärtner
+Oft erscheint uns die Künstliche Intelligenz als autonom. Ein System, das wie durch Zauberei lernt. Doch die Forscherin Kate Crawford erinnert uns daran: KI ist weder rein künstlich noch von Natur aus intelligent. Hinter jedem ‚smarten‘ Algorithmus verbirgt sich eine gigantische Anzahl von Menschen. In der Fachwelt spricht man von „Ghost Work“ (Geisterarbeit).  
+Stellen Sie sich diesen Garten vor. Damit er so ordentlich aussieht, muss jemand das Unkraut jäten. In der Welt der KI bedeutet das: Data Labeling . Millionen von Menschen im Globalen Süden sitzen vor Bildschirmen und markieren Bilder, damit ein Auto lernt, was ein Baum ist oder was ein Mensch.
+Denn KI ist ein System, welches tief in physischen Prozessen und menschlicher Arbeit verwurzelt ist. 
+Verschleierung durch Terminologie: Der Begriff „Künstliche Intelligenz“ suggeriert hierbei eine „rein technische“ und „nicht natürliche“ Technologie und verbirgt die zugrundeliegende menschliche Arbeit und die natürlichen Rohstoffe.  
+Die Illusion der Autonomie: Die Vorstellung, dass Wissen und Intelligenz vollständig an eine Maschine ausgelagert werden können, wird als streitbar kritisiert, da der Mensch in jeder Phase der Entwicklung präsent bleibt.
+Der Globale Süden: Der „Körper“ der KI beginnt in den Minen des Globalen Südens, wo Rohstoffe wie Lithium oder Coltan abgebaut werden. Diese harte körperliche Arbeit bildet die materielle Basis für die Hardware, die wir im Globalen Norden nutzen.
+Damit KI-Systeme „intelligent“ wirken, müssen riesige Datenmengen von Menschen vorsortiert und markiert werden (Data Labeling). Diese Arbeit wird oft in Niedriglohnländer ausgelagert und als „kognitive Sweatshops“ bezeichnet. 
+Der Globale Norden: Während der Globale Süden die ökologischen und sozialen Kosten trägt, liegen die Vorteile primär im Globalen Norden. Die großen Gewinner des KI-Booms sind Tech-Giganten in den USA und China sowie in geringerem Maße Europa.  Auch das Design von KI (Stimmen, Aussehen von Robotern) spiegelt oft westliche Ideale wider. „Whiteness“ wird als Norm gesetzt, was dazu führt, dass Menschen im Globalen Süden oder People of Color durch Biases in den Systemen häufiger diskriminiert werden (z. B. bei der Gesichtserkennung). 
+Lösungen: Große Teile der KI-Industrie sind in ihrer derzeitigen Form weder wünschenswert noch akzeptabel. Mögliche Lösungsansätze (nach Anne Burkhardt) könnten daher sein: 
+1.	Politische und strukturelle Maßnahmen: Regulierung von Big Tech, Boykott bestimmter Technologien, Aufklärung die ein Bewusstsein für die Problematik schärfen soll.  
+2.	Epistemische und wissenschaftliche Lösungen: Marginalisierte Perspektiven und Wissensbestände gezielt „annehmen“ und von ihnen lernen, Stärkung von Organisationen wie Black in AI oder LatinX in AI um die Sichtbarkeit und Teilhabe unterrepräsentierter Gruppen in der Forschung erhöhen. 
+3.	Aktivismus und Solidarität: Grassroots-Bewegungen: Netzwerke wie Tierra Común oder das feministische Kollektiv Coding Rights arbeiten aktiv an der Aufdeckung von Diskriminierung und der Kreation gerechterer technologischer Visionen. 
+
+
+Station 4: Bio-logische Netzwerke
+Unter Ihren Füßen findet gerade eine Rechenleistung statt, die wir erst langsam zu verstehen beginnen. Das Myzel, das fadenförmige Netzwerk der Pilze, tauscht zwischen den Bäumen dieser Wiese Nährstoffe und Informationen über Schädlingsbefall aus. Es ist ein dezentrales, lernfähiges System, eine Intelligenz ohne Gehirn.
+In der Informatik nutzen wir künstliche neuronale Netze, die von der Biologie inspiriert sind. Wir programmieren Computer nicht mehr stur logisch (Wenn-Dann), sondern wir bauen Neuronale Netze, die lernen wie ein Organismus: durch Versuch, Irrtum und Anpassung. Doch während KI auf mathematischer Optimierung und elektrischen Impulsen basiert, basiert die Natur auf biochemischer Kommunikation und Jahrmillionen der Evolution. 
+
+Neuronale Netze sind von biologischen Systemen inspiriert, beruhen aber auf anderen Materialien und Mechanismen. Daraus entsteht die Frage: Ist KI ein Fremdkörper oder eine Fortsetzung evolutionärer Prinzipien?
+Haraway würde die Bezeichnung „künstlich“ kritisch sehen, weil diese die Trennung von Natur und Technik voraussetzt. In ihrem Denken sind Cyborgs, und damit auch KI, keine bloßen Maschinen oder simplen Hybride, sondern „implodierte Entitäten“: dichte, materielle und zugleich bedeutungsvolle Dinge, in denen Maschinen, Energiesysteme, menschliche Praktiken und nichtmenschliche Akteure untrennbar zusammenhängen. 
+Statt Biomimikry als einseitige Imitation betont Haraway „Sympoiesis“: gemeinsames Hervorbringen („making-with“) in kollektiven Systemen ohne klare Grenzen.  
+Damit verbunden sind Begriffe wie:
+Chthuluzän: ein Zeitalter enger Verflechtung, in dem Menschen nur eine Kraft unter vielen sind. 
+Multispecies muddle: ein multispezifisches Durcheinander von Akteur*innen.  Auch KI kann hier ein Mit-Akteur sein, der mit biologischen und geologischen Systemen verwoben ist.
+Holobiont: ein Wesen nicht als Individuum, sondern als symbiotisches Arrangement vieler Partner. 
+	Die Biologin und Philosophin Donna Haraway fordert uns auf, die Illusion des autarken Individuums aufzugeben und stattdessen das Konzept der „Sympoiesis“, des gemeinsamen Erschaffens, zu verinnerlichen. In ihrem Denken sind alle Lebewesen, einschließlich des Menschen, sogenannte „Holobionten“: symbiotische Arrangements, die untrennbar mit Mikroben, Technologien und anderen Arten verwoben sind
+
+Der neue Horizont:
+KI als biomimetische Fortsetzung der Natur. Wir sind nicht die Erfinder der Intelligenz, sondern lediglich ihre neuesten Übersetzer.
+Aufgabe: Ein schnelles "Tinder für Netzwerke" (oder einfach 3 Flip-Cards/Karteikarten zum Antippen), um Haraways Konzept aufzulockern.
+Die Interaktion: Es werden 3 kurze Fakten eingeblendet. Die Besucher*innen müssen per Klick entscheiden: Ist das Biologie (Pilznetzwerk) oder Technologie (KI-Netzwerk)?
+Fakt 1: "Lernt durch Versuch, Irrtum und Anpassung." -> Klick -> Antwort: "Beides. KI ahmt diesen biologischen Prozess nach."
+Fakt 2: "Tauscht Informationen über elektrische Impulse und chemische Signale aus." -> Klick -> Antwort: "Biologie (Myzel)."
+Fakt 3: "Verbraucht große Mengen an Wasser." -> Klick -> Antwort: "Technologie (Rechenzentren)."
+
+
+
+Station 5: Blick in die Sterne
+Die Sternwarte steht für klassischen Forschergeist: beobachten, messen, deuten. Doch viele Phänomene der Gegenwart entziehen sich menschlicher Wahrnehmung, weil sie zu groß, zu komplex und räumlich-zeitlich zu verteilt sind. Timothy Morton nennt solche Phänomene „Hyperobjekte“  - etwa den Klimawandel, aber auch technische Systeme.
+Diese sind so gewaltig und komplex, dass sie für die menschliche Wahrnehmung unsichtbar bleiben. Wir spüren das Wetter, aber wir sehen nicht das Klima. Hier kommt die KI ins Spiel. Sie ist kein Teleskop, das vergrößert, sondern kann ein Sensorium für Hyperobjekte darstellen. Sie erkennt Muster in der Atmosphäre, in den Ozeanen und in genetischen Sequenzen, die wir nur schwer wahrnehmen könnten und bereitet diese für uns auf. 
+Hyperobjekte: Massive Phänomene wie der Klimawandel oder das Internet. Sie sind in Zeit und Raum so weit verteilt, dass sie für den Menschen „nicht-lokal“ sind. Man kann sie nie als Ganzes sehen, sondern nur in ihren punktuellen Auswirkungen (wie Regentropfen oder ein lokaler Datentransfer) wahrnehmen. Sie besitzen eine Viskosität, die bewirkt, dass sie an uns „kleben“; wir können uns nicht von ihnen distanzieren. 
+Auch KI-Systeme und globale Netzwerke sind Hyperobjekte. 
+Nonlocality: Die Eigenschaft von Hyperobjekten, dass ihre lokale Manifestation (z. B. ein Smartphone) nicht identisch mit dem Objekt selbst (das globale Netzwerk) ist. 
+„Hyperobjects are real whether or not someone is thinking of them. Indeed . . . hyperobjects end the possibility of transcendental leaps ‘outside’ physical reality.“ 
+
+
+
+Station 6: Perspektive 
+Auf dem Weg über den Campus haben wir gesehen, dass die alte Erzählung eines fundamentalen Gegensatzes von Technik und Natur nicht länger trägt. In einer Welt begrenzter Ressourcen können wir uns eine (gedankliche) Trennung dieser beiden Sphären schlichtweg nicht mehr leisten. Eine tiefe Vernetzung der Systeme scheint unausweichlich. Dabei zeigen viele positive Beispiele, welche gewinnbringenden Lösung aus diesen Verbindungen entstehen können. 
+So möchte das Startup Polybot mit der Entwicklung kleiner, autonomer und intelligenter Roboter, die in Mischkulturen (Polykulturen) arbeiten können, eine Revolution der herkömmlichen Landwirtschaft erzielen. Die KI kann Pflanzen "sehen", Unkraut erkennen und entfernen oder reifes Obst und Gemüse pflücken. So werden auch vielfältige Mischkulturen wirtschaftlich rentabel gemacht und ein Beitrag zur Nachhaltigkeit geleistet. 
+
+Gleichzeitig dürfen wir uns keinen harmonischen Illusionen hingeben. Weder der Sehnsucht nach einer unberührten „reinen Natur“, noch dem blinden Glauben an eine allrettende Technologie. Es gibt keinen einfachen Ausweg durch sogenannte Technofixes. Stattdessen müssen wir, im Sinne der Wissenschaftsphilosophin Donna Haraway, lernen, mit den ökologischen wie sozialen Widersprüchen unruhig zu bleiben („staying with the trouble“) ebenso wie ein oft unbequemes Hinterfragen der Strukturen, die unsere Technologie formen. Diese Unruhe erfordert von uns, neue, hybride Verbindungen mit technologischen Akteuren einzugehen aber eben auch, diese permanent kritisch zu hinterfragen. Wenn wir KI als Heilsbringer betrachten, müssen wir im selben Atemzug fragen: Was tun wir eigentlich derzeit für sie und die Konzerne dahinter? Wir sind nicht nur passive Profiteure, sondern der Treibstoff dieser Systeme. Wir nähren sie ununterbrochen durch unsere Datenspenden, durch unsichtbare menschliche Arbeitskraft beim Trainieren der Algorithmen und durch den massiven Abbau planetarer Ressourcen für ihre Hardware. „Unruhig bleiben“ bedeutet daher, Verantwortung in genau diesem komplexen Netz aus planetaren und ökonomischen Abhängigkeiten zu übernehmen.
+
+„The task is to become capable, with each other in all of our bumptious kinds, of response… staying with the trouble requires learning to be truly present.“ 
+
+
+
+
+Station 7: Feedback
+1.	Hat diese Tour deine Sichtweise auf das Verhältnis von KI und Natur verändert?
+Sternerating 1 = Gar nicht, 5 = Sehr stark
+2.	Welcher der folgenden Gedanken wird dir nach diesem Spaziergang am ehesten im Gedächtnis bleiben?"
+Klickbare Buttons (Single Choice)
+Dass KI aus physischen Rohstoffen der Erde besteht (Geologie der Medien).
+Dass hinter der KI menschliche Klick-Arbeit steckt (Ghost Work).
+Die Parallelen zwischen Pilznetzwerken und neuronalen Netzen.
+Dass wir im Anthropozän Natur und Technik nicht mehr trennen können.
+3.	Wie hat das Format (Texte am Smartphone + physischer Spaziergang im Cyber Valley) für dich funktioniert?"
+Das Format: Klickbare Buttons (Single Choice)
+Sehr gut – Smartphone und Umgebung haben sich toll ergänzt.
+Okay – Aber ich habe mehr auf den Bildschirm als in die Natur geschaut.
+Schwierig – Das Lesen am Handy hat mich eher von der Umgebung abgelenkt.
+4.	Offenes Feld: Lass uns gerne deine Gedanken und Anmerkungen zur Tour hier ... (Optional)
+

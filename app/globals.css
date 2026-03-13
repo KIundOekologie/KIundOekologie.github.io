@@ -34,23 +34,173 @@
 }
 
 @layer components {
-  /* Vintage Button */
+  /* === TYPOGRAPHY === */
+
+  /* H1 / Hero Text */
+  .hero-text {
+    @apply font-heading text-hero lg:text-hero-lg leading-none font-normal;
+  }
+
+  .hero-text-tight {
+    @apply hero-text tracking-tight-hero lg:tracking-tight-hero-lg;
+  }
+
+  .hero-word-italic {
+    @apply italic font-heading;
+  }
+
+  /* H2 / Section Titles */
+  .section-title {
+    @apply font-heading text-section-title-lg lg:text-section-title text-text-main;
+  }
+
+  .section-title-with-border {
+    @apply section-title pb-4 border-b border-border-color;
+  }
+
+  .section-title-border-top {
+    @apply section-title pt-4 border-t border-border-color;
+  }
+
+  /* Fließtext */
+  .flow-text {
+    @apply font-body text-base lg:text-lg leading-relaxed text-text-main max-w-readable;
+  }
+
+  .flow-text-justified {
+    @apply flow-text text-justify;
+  }
+
+  /* Micro-Copy (Captions, Dates, Categories) */
+  .micro-copy {
+    @apply font-body text-micro uppercase tracking-micro text-dark-slate font-medium;
+  }
+
+  .micro-copy-lg {
+    @apply font-body text-micro-lg uppercase tracking-micro text-dark-slate font-medium;
+  }
+
+  /* === BUTTONS === */
+
+  /* Vintage Primary Button */
   .btn-vintage {
-    @apply inline-block px-6 py-3 sm:px-8 sm:py-4 bg-accent-flora text-white font-body text-sm sm:text-base tracking-wider uppercase no-underline;
-    @apply border-none cursor-pointer;
+    @apply inline-block px-6 py-3 sm:px-8 sm:py-4 bg-accent-flora text-white font-body text-sm sm:text-base tracking-wider uppercase;
+    @apply border-none cursor-pointer rounded-none;
     @apply hover:bg-accent-flora/90 active:bg-accent-flora/95;
     @apply transition-colors duration-150;
   }
+
+  /* Vintage Secondary Button (Outline) */
+  .btn-vintage-outline {
+    @apply inline-block px-6 py-3 sm:px-8 sm:py-4 bg-transparent text-text-main font-body text-sm sm:text-base tracking-wider uppercase;
+    @apply border border-text-main cursor-pointer rounded-none;
+    @apply hover:bg-text-main hover:text-bg-base active:bg-text-main/90;
+    @apply transition-colors duration-150;
+  }
+
+  /* Terra Button */
+  .btn-terra {
+    @apply btn-vintage bg-accent-terra hover:bg-accent-terra/90 active:bg-accent-terra/95;
+  }
+
+  /* === LAYOUT & STRUCTURE === */
+
+  /* Asymmetrisches Grid */
+  .grid-asymmetric {
+    @apply grid grid-cols-12 gap-4 lg:gap-8;
+  }
+
+  .col-offset-left {
+    @apply col-span-12 lg:col-span-4 lg:col-start-2;
+  }
+
+  .col-offset-right {
+    @apply col-span-12 lg:col-span-6 lg:col-start-7;
+  }
+
+  .col-narrow {
+    @apply col-span-12 lg:col-span-4;
+  }
+
+  .col-wide {
+    @apply col-span-12 lg:col-span-7;
+  }
+
+  .col-half {
+    @apply col-span-12 lg:col-span-6;
+  }
+
+  /* Negative Margins für Überlappungen */
+  .overlap-up {
+    @apply -mt-8 lg:-mt-16 relative z-10;
+  }
+
+  .overlap-down {
+    @apply -mb-8 lg:-mb-16;
+  }
+
+  .overlap-left {
+    @apply -ml-4 lg:-ml-8 relative z-10;
+  }
+
+  .overlap-right {
+    @apply -mr-4 lg:-mr-8;
+  }
+
+  /* Section Spacing */
+  .section-spaced {
+    @apply py-section lg:py-section-lg;
+  }
+
+  .section-spaced-sm {
+    @apply py-16 lg:py-24;
+  }
+
+  /* === DIVIDERS & BORDERS === */
 
   /* Fine Divider */
   .divider {
     @apply w-full h-px bg-border-color my-8 sm:my-12;
   }
 
+  .divider-thick {
+    @apply w-full h-px bg-border-color my-12 sm:my-16;
+  }
+
+  /* Border Top/Bottom für Sektionen */
+  .section-border-top {
+    @apply border-t border-border-color pt-section lg:pt-section-lg;
+  }
+
+  .section-border-bottom {
+    @apply border-b border-border-color pb-section lg:pb-section-lg;
+  }
+
+  .section-border-both {
+    @apply border-y border-border-color py-section lg:py-section-lg;
+  }
+
+  /* Fine Border Box */
+  .bordered-box {
+    @apply border border-border-color p-6 lg:p-8;
+  }
+
+  /* === CONTAINERS === */
+
   /* Section Container */
   .section-container {
-    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16;
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  .section-container-narrow {
+    @apply max-w-3xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-container-wide {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* === SPECIAL BOXES === */
 
   /* Vintage Fact Box */
   .fact-box {
@@ -64,25 +214,89 @@
     @apply text-sm sm:text-base text-text-main/80 leading-relaxed;
   }
 
+  /* Quote Box */
+  .quote-box {
+    @apply border-l-2 border-accent-terra pl-6 py-4 my-8;
+    @apply font-heading text-2xl lg:text-3xl text-text-main italic;
+  }
+
+  /* === GLASSMORPHISM === */
+
+  /* Glass Effect */
+  .glass {
+    background-color: rgb(244, 241, 234, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-header {
+    @apply glass border-b border-border-color/50 sticky top-0 z-40;
+  }
+
+  /* === IMAGES === */
+
+  /* Bild mit körnigem Effekt */
+  .grainy-image {
+    @apply relative overflow-hidden;
+  }
+
+  .grainy-image::after {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyMDAnIGhlaWdodD0nMjAwJz48ZmlsdGVyIGlkPSdnoic+PGZlVHVyYnVsZW5jZSB0eXBlPSdmcmFjdGFsT2lzaWUnIGJhc2VGcmVxdWVuY3k9JzAuODUnIG51bU9jdGF2ZXM9JzMnIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWx0ZXI9J3VybCgjZykiIG9wYWNpdHk9JzAuMycvPjwvc3ZnPg==');
+    background-size: 100px 100px;
+    opacity: 0.15;
+  }
+
+  /* Vintage Filter für Bilder */
+  .vintage-filter {
+    filter: sepia(10%) contrast(95%);
+  }
+
+  /* Image Container */
+  .img-container {
+    @apply w-full h-full object-cover;
+  }
+
+  .img-portrait {
+    @apply img-container aspect-[3/4];
+  }
+
+  .img-landscape {
+    @apply img-container aspect-[16/10];
+  }
+
+  .img-square {
+    @apply img-container aspect-square;
+  }
+
+  /* === UTILITY CLASSES === */
+
   /* Content Text */
   .content-text {
     @apply font-body text-base sm:text-lg leading-relaxed text-text-main;
     @apply text-justify;
   }
-}
 
-/* Bild mit körnigem Effekt */
-.grainy-image {
-  position: relative;
-  overflow: hidden;
-}
+  /* Tracking Classes */
+  .tracking-tight-hero {
+    letter-spacing: -0.02em;
+  }
 
-.grainy-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyMDAnIGhlaWdodD0nMjAwJz48ZmlsdGVyIGlkPSdnoic+PGZlVHVyYnVsZW5jZSB0eXBlPSdmcmFjdGFsT2lzaWUnIGJhc2VGcmVxdWVuY3k9JzAuODUnIG51bU9jdGF2ZXM9JzMnIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWx0ZXI9J3VybCgjZykiIG9wYWNpdHk9JzAuMycvPjwvc3ZnPg==');
-  background-size: '100px 100px';
-  opacity: 0.15;
-  pointer-events: none;
+  .tracking-tight-hero-lg {
+    letter-spacing: -0.03em;
+  }
+
+  .tracking-micro {
+    letter-spacing: 0.05em;
+  }
+
+  /* Line Height Classes */
+  .leading-readable {
+    line-height: 1.7;
+  }
+
+  .leading-relaxed-custom {
+    line-height: 1.8;
+  }
 }

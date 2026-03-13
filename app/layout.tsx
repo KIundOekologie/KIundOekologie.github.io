@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-body bg-bg-base text-text-main antialiased min-h-screen relative">
-        {/* Noise Overlay für Papier-Haptik */}
+        {/* Global Grain Overlay für Papier-/Filmhaptik */}
         <div
           className="fixed inset-0 pointer-events-none z-50 opacity-[0.04]"
           style={{
