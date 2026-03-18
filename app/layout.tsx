@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { Navigation } from "@/components/Navigation";
+import { Providers } from "@/components/Providers";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -37,13 +38,15 @@ export default function RootLayout({
           }}
         />
 
-        {/* Sticky Navigation */}
-        <Navigation />
+        <Providers>
+          {/* Sticky Navigation */}
+          <Navigation />
 
-        {/* Main Content mit Padding für Sticky Nav */}
-        <main className="pt-14 sm:pt-16">
-          {children}
-        </main>
+          {/* Main Content mit Padding für Sticky Nav */}
+          <main className="pt-14 sm:pt-16">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );

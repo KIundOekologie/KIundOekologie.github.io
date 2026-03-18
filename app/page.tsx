@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HomePage() {
+  const { lang } = useLanguage();
+
   return (
     <div className="w-full">
 
@@ -33,7 +38,7 @@ export default function HomePage() {
         {/* Titel – unten links positioniert */}
         <div className="absolute bottom-0 left-0 right-0 z-10 px-6 sm:px-10 lg:px-16 pb-12 sm:pb-16 lg:pb-20">
           <p className="font-body text-[10px] sm:text-xs text-white/45 uppercase tracking-[0.28em] mb-4 sm:mb-6">
-            Ein literarisch-ökologischer Pfad
+            {lang === "de" ? "Ein literarisch-ökologischer Pfad" : "A literary-ecological audio walk"}
           </p>
           <h1
             className="font-heading text-white font-normal leading-[0.88]"
@@ -45,7 +50,7 @@ export default function HomePage() {
           </h1>
           <div className="mt-6 sm:mt-8 flex items-center gap-5">
             <p className="font-body text-xs sm:text-sm text-white/50 tracking-[0.12em]">
-              KI — Natur — Ecocriticism
+              {lang === "de" ? "KI — Natur — Ecocriticism" : "AI — Nature — Ecocriticism"}
             </p>
           </div>
         </div>
@@ -73,7 +78,7 @@ export default function HomePage() {
             {/* Abschnittsbezeichnung */}
             <div className="flex items-center gap-3 mb-8 sm:mb-12">
               <span className="font-body text-[10px] uppercase tracking-[0.22em] text-accent-terra">
-                Leitartikel
+                {lang === "de" ? "Leitartikel" : "Editorial"}
               </span>
               <div className="h-px flex-1 bg-border-color" />
             </div>
@@ -82,42 +87,73 @@ export default function HomePage() {
               className="font-heading text-text-main font-normal leading-[1.05] mb-10 sm:mb-14"
               style={{ fontSize: "clamp(2rem, 4vw, 3.4rem)" }}
             >
-              KI und Natur –
-              <br />
-              <span className="italic">eine neue Beziehung</span>
+              {lang === "de" ? (
+                <>KI und Natur –<br /><span className="italic">eine neue Beziehung</span></>
+              ) : (
+                <>AI and Nature –<br /><span className="italic">a new relationship</span></>
+              )}
             </h2>
 
             {/* Eingebettetes Zitatblock */}
             <div className="border-l-2 border-accent-terra pl-6 mb-10 py-2">
               <p className="font-heading text-lg sm:text-xl lg:text-2xl text-text-main italic leading-relaxed">
-                „Der Garten ist ein inhärent hybrider Raum, der die strikte
-                Dichotomie von Natur und Kultur auflöst."
+                {lang === "de"
+                  ? <>„Der Garten ist ein inhärent hybrider Raum, der die strikte Dichotomie von Natur und Kultur auflöst."</>
+                  : <>The garden is an inherently hybrid space that dissolves the strict dichotomy between nature and culture.</>}
               </p>
             </div>
 
             {/* Fließtext mit Drop Cap */}
             <div className="flow-text-justified drop-cap">
               <p className="mb-6">
-                Im Rahmen dieses Projekts, welches als Teil des Masterstudiengangs Literatur- und Kulturtheorie an der Universität Tübingen entstanden ist, dient der Begriff des{" "}
-                <span className="italic-heading text-accent-terra">
-                  Digitalen Gartens
-                </span>{" "}
-                als zentrale kulturtheoretische Leitmetapher und
-                Erkenntnismodell. Historisch betrachtet, markiert der Garten
-                keine unberührte Natur, sondern fungiert als Kontaktzone, in
-                der Natur und Kulturtechnik aufeinandertreffen – geformt durch
-                intentionale menschliche Eingriffe.
+                {lang === "de" ? (
+                  <>
+                    Im Rahmen dieses Projekts, welches als Teil des Masterstudiengangs Literatur- und Kulturtheorie an der Universität Tübingen entstanden ist, dient der Begriff des{" "}
+                    <span className="italic-heading text-accent-terra">
+                      Digitalen Gartens
+                    </span>{" "}
+                    als zentrale kulturtheoretische Leitmetapher und
+                    Erkenntnismodell. Historisch betrachtet, markiert der Garten
+                    keine unberührte Natur, sondern fungiert als Kontaktzone, in
+                    der Natur und Kulturtechnik aufeinandertreffen – geformt durch
+                    intentionale menschliche Eingriffe.
+                  </>
+                ) : (
+                  <>
+                    This project, developed as part of the Master&apos;s programme in Literary and Cultural Theory at the University of Tübingen, uses the concept of the{" "}
+                    <span className="italic-heading text-accent-terra">
+                      Digital Garden
+                    </span>{" "}
+                    as a central cultural-theoretical guiding metaphor and
+                    model of understanding. Historically, the garden does not mark
+                    untouched nature, but functions as a contact zone where nature
+                    and cultural technique meet – shaped by intentional human
+                    interventions.
+                  </>
+                )}
               </p>
               <p className="mb-6">
-                Übertragen auf das Cyber Valley in Tübingen und die Entwicklung Künstlicher Intelligenz ermöglicht dieses Bild einen
-                Perspektivwechsel: An diesem Ort werden primär
-                Datennetze, Algorithmen und Rechenmodelle{" "}
-                <span className="italic-heading text-accent-flora">
-                  „kultiviert"
-                </span>
-                . Der gängige Diskurs um Digitalisierung und KI nutzt dabei oft Metaphern des Ätherischen und Immateriellen (wie z. B. die Cloud), die eine Entkopplung von der physischen Welt suggerieren. Die Metapher des Gartens korrigiert dieses Narrativ.So wie ein physischer Garten untrennbar mit dem Boden und den
-                Nährstoffen verbunden ist, in denen er wurzelt, ist auch die digitale Kultivierung
-                tief mit materiellen und geologischen Prozessen verwoben.
+                {lang === "de" ? (
+                  <>
+                    Übertragen auf das Cyber Valley in Tübingen und die Entwicklung Künstlicher Intelligenz ermöglicht dieses Bild einen
+                    Perspektivwechsel: An diesem Ort werden primär
+                    Datennetze, Algorithmen und Rechenmodelle{" "}
+                    <span className="italic-heading text-accent-flora">
+                      „kultiviert"
+                    </span>
+                    . Der gängige Diskurs um Digitalisierung und KI nutzt dabei oft Metaphern des Ätherischen und Immateriellen (wie z. B. die Cloud), die eine Entkopplung von der physischen Welt suggerieren. Die Metapher des Gartens korrigiert dieses Narrativ. So wie ein physischer Garten untrennbar mit dem Boden und den
+                    Nährstoffen verbunden ist, in denen er wurzelt, ist auch die digitale Kultivierung
+                    tief mit materiellen und geologischen Prozessen verwoben.
+                  </>
+                ) : (
+                  <>
+                    Applied to the Cyber Valley in Tübingen and the development of Artificial Intelligence, this image enables a change of perspective: it is primarily data networks, algorithms and computational models that are being{" "}
+                    <span className="italic-heading text-accent-flora">
+                      „cultivated"
+                    </span>{" "}
+                    here. The prevailing discourse around digitalisation and AI often uses metaphors of the ethereal and immaterial (such as the Cloud), which suggest a decoupling from the physical world. The metaphor of the garden corrects this narrative. Just as a physical garden is inseparably connected to the soil and nutrients in which it is rooted, digital cultivation is also deeply intertwined with material and geological processes.
+                  </>
+                )}
               </p>
             </div>
           </div>
@@ -136,9 +172,9 @@ export default function HomePage() {
             <div className="mt-3 flex items-start gap-2">
               <div className="w-3 h-px bg-text-main/30 mt-2 flex-shrink-0" />
               <p className="font-body text-[10px] text-text-main/45 leading-relaxed italic">
-                Mineralkristall. Seltene Erden und Mineralien bilden die
-                physische Grundlage digitaler Infrastruktur – die vermeintlich
-                immaterielle Cloud hat immer einen Körper.
+                {lang === "de"
+                  ? "Mineralkristall. Seltene Erden und Mineralien bilden die physische Grundlage digitaler Infrastruktur – die vermeintlich immaterielle Cloud hat immer einen Körper."
+                  : "Mineral crystal. Rare earths and minerals form the physical basis of digital infrastructure – the supposedly immaterial cloud always has a body."}
               </p>
             </div>
           </div>
@@ -166,8 +202,9 @@ export default function HomePage() {
             className="font-heading text-text-main italic font-normal leading-[1.45]"
             style={{ fontSize: "clamp(1.4rem, 3vw, 2.6rem)" }}
           >
-            „Die vermeintlich immaterielle digitale Arbeit manifestiert sich in
-            massiver ökologischer Materialität."
+            {lang === "de"
+              ? <>„Die vermeintlich immaterielle digitale Arbeit manifestiert sich in massiver ökologischer Materialität."</>
+              : <>The supposedly immaterial digital work manifests itself in massive ecological materiality.</>}
           </p>
           <div className="h-px bg-border-color mt-12 sm:mt-16" />
         </div>
@@ -184,7 +221,7 @@ export default function HomePage() {
           <div className="col-span-12 lg:col-span-4">
             <div className="flex items-center gap-3 mb-5">
               <span className="font-body text-[10px] uppercase tracking-[0.22em] text-accent-terra">
-                Die Tour
+                {lang === "de" ? "Die Tour" : "The Tour"}
               </span>
               <div className="h-px flex-1 bg-border-color" />
             </div>
@@ -192,7 +229,11 @@ export default function HomePage() {
               className="font-heading text-text-main font-normal italic leading-[1.15]"
               style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)" }}
             >
-              Physischer Raum,<br />digitale Reflexion
+              {lang === "de" ? (
+                <>Physischer Raum,<br />digitale Reflexion</>
+              ) : (
+                <>Physical Space,<br />Digital Reflection</>
+              )}
             </p>
           </div>
 
@@ -200,21 +241,14 @@ export default function HomePage() {
           <div className="col-span-12 lg:col-span-7 lg:col-start-6">
             <div className="flow-text-justified">
               <p className="mb-5">
-                Die konzipierte digitale Tour greift diese theoretische Prämisse
-                didaktisch auf. Die Besucherinnen und Besucher bewegen sich physisch durch
-                reale Landschaftselemente des Cyber Valley Innovationscampus in unmittelbarer Nähe zur
-                Hochtechnologie-Infrastruktur. Angeleitet durch
-                das Smartphone interagieren sie an spezifischen Stationen mit
-                Texten, die aus der Perspektive des Ecocriticism und der
-                Medienökologie beleuchten, wie die digitale Welt eben jene
-                physische Natur durchdringt und formt (und andersherum). Unabhängig davon steht die gesamte Tour auch zum Entdecken auf dieser Website bereit.
+                {lang === "de"
+                  ? "Die konzipierte digitale Tour greift diese theoretische Prämisse didaktisch auf. Die Besucherinnen und Besucher bewegen sich physisch durch reale Landschaftselemente des Cyber Valley Innovationscampus in unmittelbarer Nähe zur Hochtechnologie-Infrastruktur. Angeleitet durch das Smartphone interagieren sie an spezifischen Stationen mit Texten, die aus der Perspektive des Ecocriticism und der Medienökologie beleuchten, wie die digitale Welt eben jene physische Natur durchdringt und formt (und andersherum). Unabhängig davon steht die gesamte Tour auch zum Entdecken auf dieser Website bereit."
+                  : "The digital tour takes up this theoretical premise didactically. Visitors move physically through real landscape elements of the Cyber Valley Innovation Campus in the immediate vicinity of the high-tech infrastructure. Guided by their smartphone, they interact at specific stations with texts that illuminate, from the perspective of Ecocriticism and media ecology, how the digital world penetrates and shapes that very physical nature (and vice versa). The entire tour is also available to explore on this website."}
               </p>
               <p>
-                Ziel ist es, die oft unsichtbare Materialität und die
-                ökologischen Verflechtungen von KI an konkreten Ort greifbar zu
-                machen und zu reflektieren, wie sich Natur und Technik im
-                Anthropozän zunehmend zu neuen, untrennbaren hybriden Systemen
-                verschränken.
+                {lang === "de"
+                  ? "Ziel ist es, die oft unsichtbare Materialität und die ökologischen Verflechtungen von KI an konkreten Ort greifbar zu machen und zu reflektieren, wie sich Natur und Technik im Anthropozän zunehmend zu neuen, untrennbaren hybriden Systemen verschränken."
+                  : "The aim is to make the often invisible materiality and the ecological entanglements of AI tangible at a specific location and to reflect on how nature and technology in the Anthropocene are increasingly intertwining into new, inseparable hybrid systems."}
               </p>
             </div>
           </div>
@@ -231,17 +265,17 @@ export default function HomePage() {
         <div className="flex items-end justify-between mb-12 sm:mb-16 pb-5 border-b border-border-color">
           <div>
             <span className="font-body text-[10px] text-text-main/40 uppercase tracking-[0.22em] block mb-2">
-              Inhalt
+              {lang === "de" ? "Inhalt" : "Contents"}
             </span>
             <h2
               className="font-heading text-text-main font-normal"
               style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
             >
-              Die Stationen
+              {lang === "de" ? "Die Stationen" : "The Stations"}
             </h2>
           </div>
           <span className="font-body text-xs text-text-main/40 pb-1 tracking-[0.1em]">
-            6 Stationen
+            {lang === "de" ? "6 Stationen" : "6 Stations"}
           </span>
         </div>
 
@@ -267,7 +301,7 @@ export default function HomePage() {
                 </span>
                 <h3 className="font-heading text-white font-normal leading-tight"
                   style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}>
-                  Begriffe und<br />Theorien
+                  {lang === "de" ? (<>Begriffe und<br />Theorien</>) : (<>Concepts and<br />Theories</>)}
                 </h3>
               </div>
             </div>
@@ -292,7 +326,7 @@ export default function HomePage() {
                 </span>
                 <h3 className="font-heading text-white font-normal leading-tight"
                   style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}>
-                  Körperliche<br />KI
+                  {lang === "de" ? (<>Körperliche<br />KI</>) : (<>Physical<br />AI</>)}
                 </h3>
               </div>
             </div>
@@ -321,7 +355,7 @@ export default function HomePage() {
                 </span>
                 <h3 className="font-heading text-white font-normal leading-tight"
                   style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}>
-                  Die unsichtbaren<br />Gärtner
+                  {lang === "de" ? (<>Die unsichtbaren<br />Gärtner</>) : (<>The Invisible<br />Gardeners</>)}
                 </h3>
               </div>
             </div>
@@ -347,7 +381,7 @@ export default function HomePage() {
                 </span>
                 <h3 className="font-heading text-white font-normal leading-tight"
                   style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}>
-                  Bio-logische<br />Netzwerke
+                  {lang === "de" ? (<>Bio-logische<br />Netzwerke</>) : (<>Bio-logical<br />Networks</>)}
                 </h3>
               </div>
             </div>
@@ -377,7 +411,7 @@ export default function HomePage() {
                     className="font-heading text-white font-normal leading-tight"
                     style={{ fontSize: "clamp(1.8rem, 4vw, 3.5rem)" }}
                   >
-                    Blick in die Sterne
+                    {lang === "de" ? "Blick in die Sterne" : "Looking at the Stars"}
                   </h3>
                 </div>
               </div>
@@ -407,7 +441,7 @@ export default function HomePage() {
                   className="font-heading text-white font-normal"
                   style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)" }}
                 >
-                  Perspektive
+                  {lang === "de" ? "Perspektive" : "Perspective"}
                 </h3>
               </div>
             </div>
@@ -426,7 +460,7 @@ export default function HomePage() {
             className="btn-vintage text-xs sm:text-sm px-10 sm:px-14 py-4 sm:py-5"
             style={{ letterSpacing: "0.18em" }}
           >
-            Zur Ersten Station →
+            {lang === "de" ? "Zur Ersten Station →" : "To the First Station →"}
           </Link>
         </div>
       </section>
@@ -439,10 +473,10 @@ export default function HomePage() {
             Digitaler Garten — 2026
           </p>
           <div className="font-body text-[10px] text-text-main/60 leading-relaxed sm:text-right">
-            <p>Ein Projekt im Rahmen des Masterstudienganges</p>
-            <p>Literatur- und Kulturtheorie</p>
+            <p>{lang === "de" ? "Ein Projekt im Rahmen des Masterstudienganges" : "A project within the Master's programme"}</p>
+            <p>{lang === "de" ? "Literatur- und Kulturtheorie" : "Literary and Cultural Theory"}</p>
             <p className="mt-1">Eberhard Karls Universität Tübingen</p>
-            <p className="mt-2">In freundlicher Zusammenarbeit mit der Cyber Valley GmbH</p>
+            <p className="mt-2">{lang === "de" ? "In freundlicher Zusammenarbeit mit der Cyber Valley GmbH" : "In friendly collaboration with Cyber Valley GmbH"}</p>
           </div>
         </div>
       </footer>

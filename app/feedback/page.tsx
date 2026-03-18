@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function FeedbackPage() {
+  const { lang } = useLanguage();
+
   return (
     <div className="w-full">
       <section className="section-container pt-10 sm:pt-14 pb-16">
@@ -21,7 +26,7 @@ export default function FeedbackPage() {
             marginWidth={0}
             className="w-full"
           >
-            Wird geladen…
+            {lang === "de" ? "Wird geladen…" : "Loading…"}
           </iframe>
         </div>
 
@@ -32,7 +37,7 @@ export default function FeedbackPage() {
       <section className="section-container">
         <div className="text-center py-6 sm:py-8">
           <Link href="/" className="btn-vintage-outline">
-            Zurück zur Startseite
+            {lang === "de" ? "Zurück zur Startseite" : "Back to Home"}
           </Link>
         </div>
       </section>
