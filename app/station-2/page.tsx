@@ -1,9 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { ChipXRay } from "@/components/ChipXRay";
 
 export default function Station2Page() {
+  const [telegrafieOpen, setTelegrafieOpen] = useState(false);
+
   return (
     <div className="w-full">
       {/* Station Hero Header */}
@@ -52,7 +55,7 @@ export default function Station2Page() {
 
         <div className="flow-text-justified">
           <p className="mb-6">
-            In Anlehnung an Donna Haraways <span className="italic-heading">„Naturecultures"</span> beschreibt Parikkas Begriff die totale Verflechtung von Technik und Natur. Es gibt keine Trennung mehr zwischen der <span className="italic-body">„physischen Welt"</span> und der <span className="italic-body">„digitalen Welt"</span>. Umgekehrt gilt: Die Erde ermöglicht Medien überhaupt erst – durch Mineralien, Materialien, geophysikalische Bedingungen.
+            In Anlehnung an Donna Haraways <span className="italic-heading">Naturecultures</span> beschreibt Parikkas Begriff die totale Verflechtung von Technik und Natur. Es gibt keine Trennung mehr zwischen der „physischen Welt" und der „digitalen Welt". Umgekehrt gilt: Die Erde ermöglicht Medien überhaupt erst – durch Mineralien, Materialien, geophysikalische Bedingungen.
           </p>
 
           <blockquote className="quote-box">
@@ -92,14 +95,14 @@ export default function Station2Page() {
             <div className="border-b border-border-color pb-4">
               <span className="fact-heading block mb-2">2. Geologische Extrakte</span>
               <p className="font-body text-base sm:text-lg text-text-main">
-                Jedes Smartphone ist ein <span className="italic-body">"geologisches Extrakt"</span>. Wenn wir ein Gerät in der Tasche tragen, tragen wir faktisch Stücke von Afrika (wie Coltan aus dem Kongo) oder Zink aus Alaska bei uns.
+                Jedes Smartphone ist ein „geologischer Extrakt". Wenn wir ein Gerät in der Tasche tragen, tragen wir faktisch Stücke von Afrika wie Coltan aus dem Kongo oder Zink aus Alaska bei uns.
               </p>
             </div>
 
             <div>
               <span className="fact-heading block mb-2">3. Mining vs. Data Mining</span>
               <p className="font-body text-base sm:text-lg text-text-main">
-                Während wir oft über <span className="italic-body">"Data Mining"</span> als Metapher sprechen, basiert die Existenz dieser Daten auf tatsächlichem Bergbau.
+                Während wir oft über „Data Mining" als Metapher sprechen, basiert die Existenz dieser Daten auf tatsächlichem Bergbau.
               </p>
             </div>
           </div>
@@ -114,41 +117,55 @@ export default function Station2Page() {
 
       {/* Gedankenexperiment */}
       <section className="section-container">
-        <h2 className="section-title-with-border mb-6 sm:mb-8">
-          Gedankenexperiment: Die Telegrafie
-        </h2>
+        <div className="border border-border-color">
+          <button
+            onClick={() => setTelegrafieOpen(!telegrafieOpen)}
+            className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left hover:bg-text-main/5 transition-colors"
+            aria-expanded={telegrafieOpen}
+          >
+            <h2 className="section-title text-text-main pr-4">
+              Gedankenexperiment: Die Telegrafie
+            </h2>
+            <span className={`text-accent-terra text-2xl sm:text-3xl transition-transform duration-200 flex-shrink-0 ${telegrafieOpen ? "rotate-45" : ""}`}>
+              +
+            </span>
+          </button>
+          <div className={`overflow-hidden transition-all duration-300 ease-in-out ${telegrafieOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"}`}>
+            <div className="px-4 sm:px-6 pb-4 sm:pb-5 pt-0">
+              <div className="flow-text-justified">
+                <p className="mb-6">
+                  Um die fundamentale Verflechtung von Technologie und Natur zu begreifen, lohnt ein Blick auf das 19. Jahrhundert und auf die <span className="font-semibold">Telegrafie</span>, das erste globale Telekommunikationsnetzwerk.
+                </p>
 
-        <div className="flow-text-justified">
-          <p className="mb-6">
-            Um die fundamentale Verflechtung von Technologie und Natur zu begreifen, lohnt ein Blick auf das 19. Jahrhundert und auf die <span className="font-semibold">Telegrafie</span>, das erste globale Telekommunikationsnetzwerk.
-          </p>
+                <p className="mb-6">
+                  In ihrer Grundfunktion basierte die Telegrafie auf der Übertragung elektrischer Impulse über weite geografische Distanzen. Ein klassischer Stromkreis erfordert hierfür physisch zwei Leiter: einen für den Hinweg und einen für den Rückweg des Signals. Um jedoch die immensen infrastrukturellen und ökonomischen Hürden zu überwinden, Tausende Kilometer Kabel verlegen zu müssen, bedienten sich die Ingenieure einer ebenso pragmatischen wie konzeptionell radikalen Lösung: der sogenannten <span className="font-heading text-accent-flora">Erdrückleitung</span>.
+                </p>
 
-          <p className="mb-6">
-            In ihrer Grundfunktion basierte die Telegrafie auf der Übertragung elektrischer Impulse über weite geografische Distanzen. Ein klassischer Stromkreis erfordert hierfür physisch zwei Leiter: einen für den Hinweg und einen für den Rückweg des Signals. Um jedoch die immensen infrastrukturellen und ökonomischen Hürden zu überwinden, Tausende Kilometer Kabel verlegen zu müssen, bedienten sich die Ingenieure einer ebenso pragmatischen wie konzeptionell radikalen Lösung: der sogenannten <span className="font-heading text-accent-flora">Erdrückleitung</span>.
-          </p>
+                <p className="mb-6">
+                  An den jeweiligen Enden der Telegrafenstationen wurden Metallplatten im Boden vergraben. Der elektrische Impuls nutzte dadurch die natürliche Leitfähigkeit unseres Planeten, die sogenannten „tellurischen Ströme", um wieder zum Ursprungsort zurückzufließen und den Stromkreis zu schließen. Man sparte sich schlichtweg das zweite Kabel, indem man den Planeten selbst als Leiter einsetzte.
+                </p>
 
-          <p className="mb-6">
-            An den jeweiligen Enden der Telegrafenstationen wurden Metallplatten im Boden vergraben. Der elektrische Impuls nutzte dadurch die natürliche Leitfähigkeit unseres Planeten, die sogenannten <span className="italic-body">„tellurischen Ströme"</span>, um wieder zum Ursprungsort zurückzufließen und den Stromkreis zu schließen. Man sparte sich schlichtweg das zweite Kabel, indem man den Planeten selbst als Leiter einsetzte.
-          </p>
+                <p className="mb-6">
+                  In genau diesem Moment der Technologiegeschichte wandelte sich die Erde von einem passiven Untergrund zu einem <span className="font-semibold">aktiven technologischen Bauteil</span>. In der kulturwissenschaftlichen Betrachtung erscheint die Telegrafie somit als das erste technologische Nervensystem des Planeten: Die oberirdischen Drähte bildeten die Nervenfasern, doch der planetare „Körper", der den Kreislauf vollendete und die Signale trug, war die Erde selbst.
+                </p>
+              </div>
 
-          <p className="mb-6">
-            In genau diesem Moment der Technologiegeschichte wandelte sich die Erde von einem passiven Untergrund zu einem <span className="font-semibold">aktiven technologischen Bauteil</span>. In der kulturwissenschaftlichen Betrachtung erscheint die Telegrafie somit als das erste technologische Nervensystem des Planeten: Die oberirdischen Drähte bildeten die Nervenfasern, doch der planetare <span className="italic-body">„Körper"</span>, der den Kreislauf vollendete und die Signale trug, war die Erde selbst.
-          </p>
-        </div>
+              <div className="bordered-box bg-accent-flora/5 my-6">
+                <p className="font-heading text-lg text-text-main mb-3">
+                  Hier offenbart sich die absolute Verschmelzung von Technik und Geosphäre zu einem Hybriden.
+                </p>
+                <p className="font-body text-base text-text-main/80">
+                  Ein Telegrafensystem bestand faktisch zur Hälfte aus technologischen Artefakten (Batterien, Kupferdrähten, Schaltern) und zur Hälfte aus geologischen Gegebenheiten (Bodenbeschaffenheit, Grundwasser, Mineralien).
+                </p>
+              </div>
 
-        <div className="bordered-box bg-accent-flora/5 my-6">
-          <p className="font-heading text-lg text-text-main mb-3">
-            Hier offenbart sich die absolute Verschmelzung von Technik und Geosphäre zu einem Hybriden.
-          </p>
-          <p className="font-body text-base text-text-main/80">
-            Ein Telegrafensystem bestand faktisch zur Hälfte aus technologischen Artefakten (Batterien, Kupferdrähten, Schaltern) und zur Hälfte aus geologischen Gegebenheiten (Bodenbeschaffenheit, Grundwasser, Mineralien).
-          </p>
-        </div>
-
-        <div className="flow-text-justified">
-          <p className="mb-6">
-            Dieses historische Paradigma veranschaulicht präzise Parikkas Konzept der Medianatures: Die Erde ist nicht nur ein passives Reservoir, aus dem wir Ressourcen für unsere Hardware abbauen. Sie war und ist das fundamentale physische Medium, das unsere technologischen Netzwerke – von der frühen Telegrafie bis zur heutigen globalen Infrastruktur der Künstlichen Intelligenz – überhaupt erst operativ macht.
-          </p>
+              <div className="flow-text-justified">
+                <p className="mb-6">
+                  Dieses historische Paradigma veranschaulicht präzise Parikkas Konzept der Medianatures: Die Erde ist nicht nur ein passives Reservoir, aus dem wir Ressourcen für unsere Hardware abbauen. Sie war und ist das fundamentale physische Medium, das unsere technologischen Netzwerke – von der frühen Telegrafie bis zur heutigen globalen Infrastruktur der Künstlichen Intelligenz – überhaupt erst operativ macht.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="divider" />
@@ -162,16 +179,26 @@ export default function Station2Page() {
 
         <div className="margin-note mb-4">
           <p className="font-body text-sm">
-            Schätzfrage: Wie viele chemische Elemente können in einem modernen Chip stecken?
+            
           </p>
           <p className="font-body text-xs text-text-main/60 mt-1">
-            Antwort: Bis zu ~60
+            
           </p>
         </div>
 
         <ChipXRay />
 
         <div className="divider" />
+      </section>
+
+      {/* Literatur */}
+      <section className="section-container pb-8">
+        <div className="border border-border-color p-6 sm:p-8">
+          <span className="fact-heading block mb-3">Literatur</span>
+          <p className="font-body text-sm text-text-main/80 leading-relaxed">
+            Parikka, J. (2015). <span className="italic">A Geology of Media</span>.
+          </p>
+        </div>
       </section>
 
       {/* Navigation Buttons */}

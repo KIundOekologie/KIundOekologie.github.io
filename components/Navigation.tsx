@@ -2,9 +2,21 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: "/station-1", label: "Station 1" },
+    { href: "/station-2", label: "Station 2" },
+    { href: "/station-3", label: "Station 3" },
+    { href: "/station-4", label: "Station 4" },
+    { href: "/station-5", label: "Station 5" },
+    { href: "/station-6", label: "Station 6" },
+    { href: "/feedback", label: "Feedback" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-bg-base/70 backdrop-blur-glass border-b border-border-color/50">
@@ -20,27 +32,22 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6 sm:gap-8">
-            <Link href="/station-1" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Station 1
-            </Link>
-            <Link href="/station-2" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Station 2
-            </Link>
-            <Link href="/station-3" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Station 3
-            </Link>
-            <Link href="/station-4" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Station 4
-            </Link>
-            <Link href="/station-5" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Station 5
-            </Link>
-            <Link href="/station-6" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Station 6
-            </Link>
-            <Link href="/feedback" className="text-sm text-text-main/70 hover:text-text-main transition-colors">
-              Feedback
-            </Link>
+            {navLinks.map(({ href, label }) => {
+              const isActive = pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`text-sm transition-colors relative ${
+                    isActive
+                      ? "text-accent-terra font-medium after:absolute after:bottom-[-18px] after:left-0 after:right-0 after:h-[2px] after:bg-accent-terra"
+                      : "text-text-main/70 hover:text-text-main"
+                  }`}
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Mobile Menu Button */}
@@ -61,27 +68,23 @@ export function Navigation() {
       {menuOpen && (
         <div className="md:hidden border-t border-border-color bg-bg-base">
           <div className="px-4 py-3 space-y-2">
-            <Link href="/station-1" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Station 1
-            </Link>
-            <Link href="/station-2" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Station 2
-            </Link>
-            <Link href="/station-3" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Station 3
-            </Link>
-            <Link href="/station-4" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Station 4
-            </Link>
-            <Link href="/station-5" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Station 5
-            </Link>
-            <Link href="/station-6" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Station 6
-            </Link>
-            <Link href="/feedback" className="block py-2 text-text-main/70 hover:text-text-main" onClick={() => setMenuOpen(false)}>
-              Feedback
-            </Link>
+            {navLinks.map(({ href, label }) => {
+              const isActive = pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`block py-2 transition-colors ${
+                    isActive
+                      ? "text-accent-terra font-medium border-l-2 border-accent-terra pl-3"
+                      : "text-text-main/70 hover:text-text-main"
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}

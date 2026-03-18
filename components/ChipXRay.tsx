@@ -24,7 +24,7 @@ const HOTSPOTS: Hotspot[] = [
     id: "coltan",
     x: "50%",
     y: "55%",
-    mineral: "Coltan (Tantal)",
+    mineral: "Coltan",
     location: "Kongo – Demokratische Republik",
     fact: "Gefördert unter oft prekärsten Bedingungen. Kinderarbeit und schwere gesundheitliche Folgen für die Bergleute.",
   },
@@ -142,7 +142,7 @@ export function ChipXRay() {
             Ein moderner Computerchip besteht aus bis zu <span className="text-accent-flora">60 verschiedenen Elementen</span>.
           </p>
           <p className="font-body text-sm text-text-main/70">
-            Jedes Smartphone ist ein „geologisches Extrakt". Wenn wir ein Gerät in der Tasche tragen, tragen wir faktisch Stücke von Afrika, Südamerika oder Asien bei uns.
+            
           </p>
         </div>
       )}

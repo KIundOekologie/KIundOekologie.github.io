@@ -25,7 +25,7 @@ export default function Station6Page() {
           >
             Perspektive
           </h1>
-          <p className="font-heading text-sm text-white/40 italic mt-3">(Ausblick)</p>
+          <p className="font-heading text-sm text-white/40 italic mt-3"></p>
         </div>
       </section>
 
@@ -48,7 +48,7 @@ export default function Station6Page() {
 
         <div className="flow-text-justified">
           <p className="mb-6">
-            So möchte das Startup <span className="font-heading text-accent-flora">Polybot</span> mit der Entwicklung kleiner, autonomer und intelligenter Roboter, die in Mischkulturen (Polykulturen) arbeiten können, eine Revolution der herkömmlichen Landwirtschaft erzielen. Die KI kann Pflanzen <span className="italic-body">"sehen"</span>, Unkraut erkennen und entfernen oder reifes Obst und Gemüse pflücken. So werden auch vielfältige Mischkulturen wirtschaftlich rentabel gemacht und ein Beitrag zur Nachhaltigkeit geleistet.
+            So möchte das Startup <span className="font-heading text-accent-flora">Polybot</span> mit der Entwicklung kleiner, autonomer und intelligenter Roboter, die in Mischkulturen (Polykulturen) arbeiten können, eine Revolution der herkömmlichen Landwirtschaft erzielen. Die KI kann Pflanzen „sehen", Unkraut erkennen und entfernen oder reifes Obst und Gemüse pflücken. So werden auch vielfältige Mischkulturen wirtschaftlich rentabel gemacht und ein Beitrag zur Nachhaltigkeit geleistet.
           </p>
         </div>
 
@@ -72,11 +72,11 @@ export default function Station6Page() {
 
         <div className="flow-text-justified">
           <p className="mb-6">
-            Gleichzeitig dürfen wir uns keinen harmonischen Illusionen hingeben. Weder der Sehnsucht nach einer unberührten <span className="italic-body">"reinen Natur"</span>, noch dem blinden Glauben an eine allrettende Technologie. Es gibt keinen einfachen Ausweg durch sogenannte Technofixes.
+            Gleichzeitig dürfen wir uns keinen harmonischen Illusionen hingeben. Weder der Sehnsucht nach einer unberührten „reinen Natur", noch dem blinden Glauben an eine allrettende Technologie. Es gibt keinen einfachen Ausweg durch sogenannte Technofixes.
           </p>
 
           <p className="mb-6">
-            Stattdessen müssen wir, im Sinne der Wissenschaftsphilosophin <span className="font-heading text-accent-terra">Donna Haraway</span>, lernen, mit den ökologischen wie sozialen Widersprüchen <span className="font-heading text-accent-flora">unruhig zu bleiben</span> (<span className="italic-body">"staying with the trouble"</span>) – ebenso wie ein oft unbequemes Hinterfragen der Strukturen, die unsere Technologie formen.
+            Stattdessen müssen wir, im Sinne der Wissenschaftsphilosophin <span className="font-heading text-accent-terra">Donna Haraway</span>, lernen, mit den ökologischen wie sozialen Widersprüchen <span className="font-heading text-accent-flora">unruhig zu bleiben</span> („staying with the trouble") – ebenso wie ein oft unbequemes Hinterfragen der Strukturen, die unsere Technologie formen.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export default function Station6Page() {
 
         <div className="flow-text-justified">
           <p className="mb-6">
-            Diese Unruhe erfordert von uns, neue, hybride Verbindungen mit technologischen Akteuren einzugehen – aber eben auch, diese permanent kritisch zu hinterfragen. Wenn wir KI als Heilsbringer betrachten, müssen wir im selben Atemzug fragen: Was tun wir eigentlich derzeit für sie und die Konzerne dahinter?
+            Diese Unruhe erfordert von uns, neue, hybride Verbindungen mit technologischen Akteuren einzugehen – aber eben auch, diese permanent kritisch zu hinterfragen. Wenn wir KI als Hilfsmittel betrachten, müssen wir im selben Atemzug fragen: Was tun wir eigentlich derzeit für sie und die Konzerne dahinter?
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function Station6Page() {
 
         <div className="bordered-box bg-accent-terra/5 my-6">
           <p className="font-heading text-lg text-text-main mb-3">
-            "Unruhig bleiben" bedeutet daher:
+            „Unruhig bleiben" bedeutet daher:
           </p>
           <p className="font-body text-base text-text-main/80">
             Verantwortung in genau diesem komplexen Netz aus planetaren und ökonomischen Abhängigkeiten zu übernehmen.
@@ -131,7 +131,7 @@ export default function Station6Page() {
       <section className="section-container">
         <div className="quote-box">
           <p className="text-xl sm:text-2xl lg:text-3xl">
-            "The task is to become capable, with each other in all of our bumptious kinds, of response... staying with the trouble requires learning to be truly present."
+            The task is to become capable, with each other in all of our bumptious kinds, of response [...] staying with the trouble requires learning to be truly present.
           </p>
           <cite className="font-body text-sm text-text-main/60 not-italic mt-4 block">
             — Donna Haraway, Staying with the Trouble

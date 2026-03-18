@@ -10,7 +10,7 @@ export default function Station3Page() {
       content: (
         <div className="flow-text-justified">
           <p className="mb-4">
-            Der Begriff <span className="italic-body">"Künstliche Intelligenz"</span> suggeriert hierbei eine "rein technische" und "nicht natürliche" Technologie und verbirgt die zugrundeliegende menschliche Arbeit und die natürlichen Rohstoffe.
+            Der Begriff „Künstliche Intelligenz" suggeriert hierbei eine „rein technische" und „nicht natürliche" Technologie und verbirgt die zugrundeliegende menschliche Arbeit und die natürlichen Rohstoffe.
           </p>
           <p>
             Die <span className="font-heading text-accent-terra">Illusion der Autonomie</span>: Die Vorstellung, dass Wissen und Intelligenz vollständig an eine Maschine ausgelagert werden können, wird als streitbar kritisiert, da der Mensch in jeder Phase der Entwicklung präsent bleibt.
@@ -23,10 +23,10 @@ export default function Station3Page() {
       content: (
         <div className="flow-text-justified">
           <p className="mb-4">
-            Der <span className="italic-body">"Körper"</span> der KI beginnt in den Minen des Globalen Südens, wo Rohstoffe wie Lithium oder Coltan abgebaut werden. Diese harte körperliche Arbeit bildet die materielle Basis für die Hardware, die wir im Globalen Norden nutzen.
+            Der „Körper" der KI beginnt in den Minen des Globalen Südens, wo Rohstoffe wie Lithium oder Coltan abgebaut werden. Diese harte körperliche Arbeit bildet die materielle Basis für die Hardware, die wir im Globalen Norden nutzen.
           </p>
           <p>
-            Damit KI-Systeme <span className="italic-body">"intelligent"</span> wirken, müssen riesige Datenmengen von Menschen vorsortiert und markiert werden (<span className="font-heading text-accent-flora">Data Labeling</span>). Diese Arbeit wird oft in Niedriglohnländer ausgelagert und als <span className="italic-body">"kognitive Sweatshops"</span> bezeichnet.
+            Damit KI-Systeme „intelligent" wirken, müssen riesige Datenmengen von Menschen vorsortiert und markiert werden (<span className="font-heading text-accent-flora">Data Labeling</span>). Diese Arbeit wird oft in Niedriglohnländer ausgelagert und als „kognitive Sweatshops" bezeichnet.
           </p>
         </div>
       ),
@@ -39,7 +39,7 @@ export default function Station3Page() {
             Während der Globale Süden die ökologischen und sozialen Kosten trägt, liegen die Vorteile primär im Globalen Norden. Die großen Gewinner des KI-Booms sind Tech-Giganten in den USA und China sowie in geringerem Maße Europa.
           </p>
           <p>
-            Auch das Design von KI (Stimmen, Aussehen von Robotern) spiegelt oft westliche Ideale wider. <span className="font-heading text-accent-terra">"Whiteness"</span> wird als Norm gesetzt, was dazu führt, dass Menschen im Globalen Süden oder People of Color durch Biases in den Systemen häufiger diskriminiert werden (z. B. bei der Gesichtserkennung).
+            Auch das Design von KI (Stimmen, Aussehen von Robotern) spiegelt oft westliche Ideale wider. <span className="font-heading text-accent-terra">„Whiteness"</span> wird als Norm gesetzt, was dazu führt, dass Menschen im Globalen Süden oder People of Color durch Biases in den Systemen häufiger diskriminiert werden (z. B. bei der Gesichtserkennung).
           </p>
         </div>
       ),
@@ -75,7 +75,7 @@ export default function Station3Page() {
       <section className="section-container pt-10 sm:pt-14">
         <div className="flow-text-justified drop-cap">
           <p className="mb-6">
-            Oft erscheint uns die Künstliche Intelligenz als autonom. Ein System, das wie durch Zauberei lernt. Doch die Forscherin <span className="font-heading text-accent-terra">Kate Crawford</span> erinnert uns daran: KI ist weder rein künstlich noch von Natur aus intelligent. Hinter jedem <span className="italic-body">"smarten"</span> Algorithmus verbirgt sich eine gigantische Anzahl von Menschen. In der Fachwelt spricht man von <span className="font-heading text-accent-flora">"Ghost Work"</span> (Geisterarbeit).
+            Oft erscheint uns die Künstliche Intelligenz als autonom. Ein System, das wie durch Zauberei lernt. Doch die Forscherin <span className="font-heading text-accent-terra">Kate Crawford</span> erinnert uns daran: KI ist weder rein künstlich noch von Natur aus intelligent. Hinter jedem „smarten" Algorithmus verbirgt sich eine gigantische Anzahl von Menschen. In der Fachwelt spricht man von <span className="font-heading text-accent-flora">„Ghost Work"</span> (Geisterarbeit).
           </p>
 
           <p className="mb-6">
@@ -119,7 +119,7 @@ export default function Station3Page() {
                 1. Politische und strukturelle Maßnahmen
               </span>
               <p className="font-body text-base sm:text-lg text-text-main">
-                Regulierung von Big Tech, Boykott bestimmter Technologien, Aufklärung, die ein Bewusstsein für die Problematik schärfen soll.
+                Regulierung von Big Tech, Boykott bestimmter Technologien, Aufklärung, die ein Bewusstsein für die Problematik schafft.
               </p>
             </div>
 
@@ -128,7 +128,7 @@ export default function Station3Page() {
                 2. Epistemische und wissenschaftliche Lösungen
               </span>
               <p className="font-body text-base sm:text-lg text-text-main">
-                Marginalisierte Perspektiven und Wissensbestände gezielt <span className="italic-body">"annehmen"</span> und von ihnen lernen. Stärkung von Organisationen wie <span className="font-heading text-accent-flora">Black in AI</span> oder <span className="font-heading text-accent-flora">LatinX in AI</span>, um die Sichtbarkeit und Teilhabe unterrepräsentierter Gruppen in der Forschung zu erhöhen.
+                Marginalisierte Perspektiven und Wissensbestände gezielt „annehmen" und von ihnen lernen. Stärkung von Organisationen wie <span className="font-heading text-accent-flora">Black in AI</span> oder <span className="font-heading text-accent-flora">LatinX in AI</span>, um die Sichtbarkeit und Teilhabe unterrepräsentierter Gruppen in der Forschung zu erhöhen.
               </p>
             </div>
 
@@ -146,18 +146,15 @@ export default function Station3Page() {
         <div className="divider" />
       </section>
 
-      {/* Zitat Box */}
-      <section className="section-container">
-        <div className="quote-box">
-          <p className="text-xl sm:text-2xl lg:text-3xl">
-            Hinter jedem "smarten" Algorithmus verbirgt sich eine gigantische Anzahl von Menschen.
-          </p>
-          <cite className="font-body text-sm text-text-main/60 not-italic mt-4 block">
-            — Kate Crawford, Ghost Work
-          </cite>
-        </div>
 
-        <div className="divider" />
+      {/* Literatur */}
+      <section className="section-container pb-8">
+        <div className="border border-border-color p-6 sm:p-8">
+          <span className="fact-heading block mb-3">Literatur</span>
+          <p className="font-body text-sm text-text-main/80 leading-relaxed">
+            Burkhardt, A. <span className="italic">Centering the South(s): Dekoloniale Perspektiven auf Künstliche Intelligenz</span>.
+          </p>
+        </div>
       </section>
 
       {/* Navigation Buttons */}

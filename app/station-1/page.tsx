@@ -229,11 +229,11 @@ export default function Station1Page() {
           </p>
 
           <p className="mb-6">
-            Die Debatte um das Anthropozän stellt diese Trennung jedoch in Frage: <span className="italic-heading text-accent-flora">„Wenn die Menschheit selbst zur Naturgewalt geworden ist und das Erdsystem in seiner Gesamtheit verändert, dann verliert die Scheidung von Natur und Kultur ihren Sinn".</span> Das Ersetzen natürlicher Umwelten durch Künstliche zählte auch Anthony Giddens zu einem Charakteristikum der Moderne.
+            Die Debatte um das Anthropozän stellt diese Trennung jedoch in Frage. So schreiben Eva Horn und Hannes Bergthaller: <span className="italic-heading text-accent-flora">„Wenn die Menschheit selbst zur Naturgewalt geworden ist und das Erdsystem in seiner Gesamtheit verändert, dann verliert die Scheidung von Natur und Kultur ihren Sinn".</span> Das Ersetzen natürlicher Umwelten durch Künstliche zählte auch Anthony Giddens zu einem Charakteristikum der Moderne.
           </p>
 
           <p className="mb-6">
-            Deutlich wird dies im Umweltschutz, der Natur meist nicht als Natur bewahrt, sondern vielmehr auf das Management von Prozessen hinausläuft. Hier vermischen sich Natürliches und Technisch-Kulturelles zunehmend in Form von Krötentunneln, Schadstoffgrenzwerten und Wildbrücken. Merkmal der Gegenwart ist somit nicht (nur) ein Verschwinden von Natur, sondern eine Ausbreitung des <span className="font-semibold">„Hybriden"</span>.
+            Deutlich wird dies etwa im Umweltschutz, der Natur meist nicht als Natur bewahrt, sondern vielmehr auf das Management von Prozessen hinausläuft. Hier vermischen sich Natürliches und Technisch-Kulturelles zunehmend in Form von Krötentunneln, Schadstoffgrenzwerten und Wildbrücken. Merkmal der Gegenwart ist somit nicht (nur) ein Verschwinden von Natur, sondern eine Ausbreitung des <span className="font-semibold">„Hybriden"</span>.
           </p>
         </div>
 
@@ -255,6 +255,16 @@ export default function Station1Page() {
         <HybridSlider />
 
         <div className="divider" />
+      </section>
+
+      {/* Literatur */}
+      <section className="section-container pb-8">
+        <div className="border border-border-color p-6 sm:p-8">
+          <span className="fact-heading block mb-3">Literatur</span>
+          <p className="font-body text-sm text-text-main/80 leading-relaxed">
+            Horn, E. &amp; Bergthaller, H. (2020). <span className="italic">Anthropozän zur Einführung</span>.
+          </p>
+        </div>
       </section>
 
       {/* Navigation Buttons */}

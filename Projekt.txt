@@ -78,7 +78,7 @@ Lösungen: Große Teile der KI-Industrie sind in ihrer derzeitigen Form weder w�
 
 
 Station 4: Bio-logische Netzwerke
-Unter Ihren Füßen findet gerade eine Rechenleistung statt, die wir erst langsam zu verstehen beginnen. Das Myzel, das fadenförmige Netzwerk der Pilze, tauscht zwischen den Bäumen dieser Wiese Nährstoffe und Informationen über Schädlingsbefall aus. Es ist ein dezentrales, lernfähiges System, eine Intelligenz ohne Gehirn.
+Unter Ihren Füßen findet gerade eine Rechenleistung statt, die wir erst langsam zu verstehen beginnen. Das Myzel, das fadenförmige Netzwerk der Pilze, tauscht zwischen Bäumen Nährstoffe und Informationen über Schädlingsbefall aus. Es ist ein dezentrales, lernfähiges System, eine Intelligenz ohne Gehirn.
 In der Informatik nutzen wir künstliche neuronale Netze, die von der Biologie inspiriert sind. Wir programmieren Computer nicht mehr stur logisch (Wenn-Dann), sondern wir bauen Neuronale Netze, die lernen wie ein Organismus: durch Versuch, Irrtum und Anpassung. Doch während KI auf mathematischer Optimierung und elektrischen Impulsen basiert, basiert die Natur auf biochemischer Kommunikation und Jahrmillionen der Evolution. 
 
 Neuronale Netze sind von biologischen Systemen inspiriert, beruhen aber auf anderen Materialien und Mechanismen. Daraus entsteht die Frage: Ist KI ein Fremdkörper oder eine Fortsetzung evolutionärer Prinzipien?

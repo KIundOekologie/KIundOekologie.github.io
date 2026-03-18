@@ -58,7 +58,7 @@ export function NetworkTinder() {
   return (
     <div className="border border-border-color p-6 sm:p-8 my-6 sm:my-8 bg-bg-base/50">
       <p className="font-body text-sm text-text-main/70 mb-4 text-center">
-        Tinder für Netzwerke – Klicke auf deine Antwort
+        Entscheide: Biologie (Pilznetzwerk) oder Technologie (KI-Netzwerk)?– Klicke auf deine Antwort
       </p>
 
       <p className="font-body text-sm text-text-main/60 text-center mb-6">

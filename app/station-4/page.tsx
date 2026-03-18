@@ -33,7 +33,7 @@ export default function Station4Page() {
       <section className="section-container pt-10 sm:pt-14">
         <div className="flow-text-justified drop-cap">
           <p className="mb-6">
-            Unter Ihren Füßen findet gerade eine Rechenleistung statt, die wir erst langsam zu verstehen beginnen. Das <span className="font-heading text-accent-flora">Myzel</span>, das fadenförmige Netzwerk der Pilze, tauscht zwischen den Bäumen dieser Wiese Nährstoffe und Informationen über Schädlingsbefall aus. Es ist ein dezentrales, lernfähiges System, eine Intelligenz ohne Gehirn.
+            Unter Ihren Füßen findet gerade eine Rechenleistung statt, die wir erst langsam zu verstehen beginnen. Das <span className="font-heading text-accent-flora">Myzel</span>, das fadenförmige Netzwerk der Pilze, tauscht zwischen Bäumen Nährstoffe und Informationen über Schädlingsbefall aus. Es ist ein dezentrales, lernfähiges System, eine Intelligenz ohne Gehirn.
           </p>
 
           <p className="mb-6">
@@ -56,7 +56,7 @@ export default function Station4Page() {
           </p>
 
           <p className="mb-6">
-            <span className="font-heading text-accent-terra">Donna Haraway</span> würde die Bezeichnung "künstlich" kritisch sehen, weil diese die Trennung von Natur und Technik voraussetzt. In ihrem Denken sind <span className="italic-heading">Cyborgs</span>, und damit auch KI, keine bloßen Maschinen oder simplen Hybride, sondern <span className="font-semibold italic-heading">"implodierte Entitäten"</span>: dichte, materielle und zugleich bedeutungsvolle Dinge, in denen Maschinen, Energiesysteme, menschliche Praktiken und nichtmenschliche Akteure untrennbar zusammenhängen.
+            <span className="font-heading text-accent-terra">Donna Haraway</span> würde die Bezeichnung „künstlich" kritisch sehen, weil diese die Trennung von Natur und Technik voraussetzt. In ihrem Denken sind Cyborgs, und damit auch KI, keine bloßen Maschinen oder simplen Hybride, sondern <span className="font-semibold italic-heading">„implodierte Entitäten"</span>: dichte, materielle und zugleich bedeutungsvolle Dinge, in denen Maschinen, Energiesysteme, menschliche Praktiken und nichtmenschliche Akteure untrennbar zusammenhängen.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function Station4Page() {
 
         <div className="flow-text-justified">
           <p className="mb-6">
-            Statt Biomimikry als einseitige Imitation betont Haraway <span className="italic-heading">„Sympoiesis"</span>: gemeinsames Hervorbringen (<span className="italic-body">"making-with"</span>) in kollektiven Systemen ohne klare Grenzen.
+            Statt Biomimikry als einseitige Imitation betont Haraway „Sympoiesis": gemeinsames Hervorbringen („making-with") in kollektiven Systemen ohne klare Grenzen.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function Station4Page() {
 
         <div className="flow-text-justified">
           <p className="mb-6">
-            Die Biologin und Philosophin <span className="font-heading text-accent-terra">Donna Haraway</span> fordert uns auf, die Illusion des autarken Individuums aufzugeben und stattdessen das Konzept der <span className="italic-heading">„Sympoiesis"</span>, des gemeinsamen Erschaffens, zu verinnerlichen. In ihrem Denken sind alle Lebewesen, einschließlich des Menschen, sogenannte <span className="font-semibold italic-heading">„Holobionten"</span>: symbiotische Arrangements, die untrennbar mit Mikroben, Technologien und anderen Arten verwoben sind.
+            Die Biologin und Philosophin <span className="font-heading text-accent-terra">Donna Haraway</span> fordert uns auf, die Illusion des autarken Individuums aufzugeben und stattdessen das Konzept der „Sympoiesis", des gemeinsamen Erschaffens, zu verinnerlichen. In ihrem Denken sind alle Lebewesen, einschließlich des Menschen, sogenannte „Holobionten": symbiotische Arrangements, die untrennbar mit Mikroben, Technologien und anderen Arten verwoben sind.
           </p>
         </div>
 
@@ -136,21 +136,31 @@ export default function Station4Page() {
       {/* Interaktive Aufgabe */}
       <section className="section-container">
         <h3 className="section-title mb-4 sm:mb-6">
-          Tinder für Netzwerke
+          Netzwerke erkennen
         </h3>
 
         <div className="margin-note mb-4">
           <p className="font-body text-sm">
-            Ein schnelles Spiel, um Haraways Konzept aufzulockern.
+            
           </p>
           <p className="font-body text-xs text-text-main/60 mt-1">
-            Entscheide: Biologie (Pilznetzwerk) oder Technologie (KI-Netzwerk)?
+            
           </p>
         </div>
 
         <NetworkTinder />
 
         <div className="divider" />
+      </section>
+
+      {/* Literatur */}
+      <section className="section-container pb-8">
+        <div className="border border-border-color p-6 sm:p-8">
+          <span className="fact-heading block mb-3">Literatur</span>
+          <p className="font-body text-sm text-text-main/80 leading-relaxed">
+            Haraway, D. J. (2020). <span className="italic">Staying with the Trouble: Making Kin in the Chthulucene</span>.
+          </p>
+        </div>
       </section>
 
       {/* Navigation Buttons */}

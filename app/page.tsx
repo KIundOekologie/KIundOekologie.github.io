@@ -98,9 +98,9 @@ export default function HomePage() {
             {/* Fließtext mit Drop Cap */}
             <div className="flow-text-justified drop-cap">
               <p className="mb-6">
-                Im Rahmen dieses Projektmoduls dient der Begriff des{" "}
+                Im Rahmen dieses Projekts, welches als Teil des Masterstudiengangs Literatur- und Kulturtheorie an der Universität Tübingen entstanden ist, dient der Begriff des{" "}
                 <span className="italic-heading text-accent-terra">
-                  „Digitalen Gartens"
+                  Digitalen Gartens
                 </span>{" "}
                 als zentrale kulturtheoretische Leitmetapher und
                 Erkenntnismodell. Historisch betrachtet, markiert der Garten
@@ -109,14 +109,14 @@ export default function HomePage() {
                 intentionale menschliche Eingriffe.
               </p>
               <p className="mb-6">
-                Übertragen auf das Cyber Valley ermöglicht dieses Bild einen
-                entscheidenden Perspektivwechsel: An diesem Ort werden primär
+                Übertragen auf das Cyber Valley in Tübingen und die Entwicklung Künstlicher Intelligenz ermöglicht dieses Bild einen
+                Perspektivwechsel: An diesem Ort werden primär
                 Datennetze, Algorithmen und Rechenmodelle{" "}
                 <span className="italic-heading text-accent-flora">
                   „kultiviert"
                 </span>
-                . So wie ein physischer Garten untrennbar mit dem Boden und den
-                Nährstoffen verbunden ist, ist auch die digitale Kultivierung
+                . Der gängige Diskurs um Digitalisierung und KI nutzt dabei oft Metaphern des Ätherischen und Immateriellen (wie z. B. die Cloud), die eine Entkopplung von der physischen Welt suggerieren. Die Metapher des Gartens korrigiert dieses Narrativ.So wie ein physischer Garten untrennbar mit dem Boden und den
+                Nährstoffen verbunden ist, in denen er wurzelt, ist auch die digitale Kultivierung
                 tief mit materiellen und geologischen Prozessen verwoben.
               </p>
             </div>
@@ -167,10 +167,57 @@ export default function HomePage() {
             style={{ fontSize: "clamp(1.4rem, 3vw, 2.6rem)" }}
           >
             „Die vermeintlich immaterielle digitale Arbeit manifestiert sich in
-            massiver ökologischer Materialität – vom Abbau seltener Erden bis
-            hin zu den direkten Auswirkungen auf das globale Klimasystem."
+            massiver ökologischer Materialität."
           </p>
           <div className="h-px bg-border-color mt-12 sm:mt-16" />
+        </div>
+      </section>
+
+
+      {/* ══════════════════════════════════════════════════════════
+          DIE TOUR — Beschreibungstext, asymmetrisch
+      ══════════════════════════════════════════════════════════ */}
+      <section className="section-container-wide py-16 lg:py-24 border-t border-border-color">
+        <div className="grid grid-cols-12 gap-6 lg:gap-10 items-start">
+
+          {/* Linke Spalte: Überschrift */}
+          <div className="col-span-12 lg:col-span-4">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="font-body text-[10px] uppercase tracking-[0.22em] text-accent-terra">
+                Die Tour
+              </span>
+              <div className="h-px flex-1 bg-border-color" />
+            </div>
+            <p
+              className="font-heading text-text-main font-normal italic leading-[1.15]"
+              style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)" }}
+            >
+              Physischer Raum,<br />digitale Reflexion
+            </p>
+          </div>
+
+          {/* Rechte Spalte: Fließtext */}
+          <div className="col-span-12 lg:col-span-7 lg:col-start-6">
+            <div className="flow-text-justified">
+              <p className="mb-5">
+                Die konzipierte digitale Tour greift diese theoretische Prämisse
+                didaktisch auf. Die Besucherinnen und Besucher bewegen sich physisch durch
+                reale Landschaftselemente des Cyber Valley Innovationscampus in unmittelbarer Nähe zur
+                Hochtechnologie-Infrastruktur. Angeleitet durch
+                das Smartphone interagieren sie an spezifischen Stationen mit
+                Texten, die aus der Perspektive des Ecocriticism und der
+                Medienökologie beleuchten, wie die digitale Welt eben jene
+                physische Natur durchdringt und formt (und andersherum). Unabhängig davon steht die gesamte Tour auch zum Entdecken auf dieser Website bereit.
+              </p>
+              <p>
+                Ziel ist es, die oft unsichtbare Materialität und die
+                ökologischen Verflechtungen von KI an konkreten Ort greifbar zu
+                machen und zu reflektieren, wie sich Natur und Technik im
+                Anthropozän zunehmend zu neuen, untrennbaren hybriden Systemen
+                verschränken.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -370,54 +417,6 @@ export default function HomePage() {
 
 
       {/* ══════════════════════════════════════════════════════════
-          DIE TOUR — Beschreibungstext, asymmetrisch
-      ══════════════════════════════════════════════════════════ */}
-      <section className="section-container-wide py-16 lg:py-24 border-t border-border-color">
-        <div className="grid grid-cols-12 gap-6 lg:gap-10 items-start">
-
-          {/* Linke Spalte: Überschrift */}
-          <div className="col-span-12 lg:col-span-4">
-            <div className="flex items-center gap-3 mb-5">
-              <span className="font-body text-[10px] uppercase tracking-[0.22em] text-accent-terra">
-                Die Tour
-              </span>
-              <div className="h-px flex-1 bg-border-color" />
-            </div>
-            <p
-              className="font-heading text-text-main font-normal italic leading-[1.15]"
-              style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)" }}
-            >
-              Physischer Raum,<br />digitale Reflexion
-            </p>
-          </div>
-
-          {/* Rechte Spalte: Fließtext */}
-          <div className="col-span-12 lg:col-span-7 lg:col-start-6">
-            <div className="flow-text-justified">
-              <p className="mb-5">
-                Die konzipierte digitale Tour greift diese theoretische Prämisse
-                didaktisch auf. Die Besucher*innen bewegen sich physisch durch
-                reale Landschaftselemente in unmittelbarer Nähe zur
-                Hochtechnologie-Infrastruktur des Cyber Valley. Angeleitet durch
-                das Smartphone interagieren sie an spezifischen Stationen mit
-                Texten, die aus der Perspektive des Ecocriticism und der
-                Medienökologie beleuchten, wie die digitale Welt eben jene
-                physische Natur durchdringt und formt.
-              </p>
-              <p>
-                Ziel ist es, die oft unsichtbare Materialität und die
-                ökologischen Verflechtungen von KI am konkreten Ort greifbar zu
-                machen und zu reflektieren, wie sich Natur und Technik im
-                Anthropozän zunehmend zu neuen, untrennbaren hybriden Systemen
-                verschränken.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* ══════════════════════════════════════════════════════════
           CTA
       ══════════════════════════════════════════════════════════ */}
       <section className="section-container">
@@ -436,14 +435,14 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="section-container border-t border-border-color py-10">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
-          <p className="font-body text-[10px] text-text-main/40 uppercase tracking-[0.18em]">
+          <p className="font-body text-[10px] text-text-main/60 uppercase tracking-[0.18em]">
             Digitaler Garten — 2026
           </p>
-          <div className="font-body text-[10px] text-text-main/35 leading-relaxed sm:text-right">
+          <div className="font-body text-[10px] text-text-main/60 leading-relaxed sm:text-right">
             <p>Ein Projekt im Rahmen des Masterstudienganges</p>
             <p>Literatur- und Kulturtheorie</p>
             <p className="mt-1">Eberhard Karls Universität Tübingen</p>
-            <p className="mt-2 text-text-main/25">In freundlicher Zusammenarbeit mit der Cyber Valley GmbH</p>
+            <p className="mt-2">In freundlicher Zusammenarbeit mit der Cyber Valley GmbH</p>
           </div>
         </div>
       </footer>
