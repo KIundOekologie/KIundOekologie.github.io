@@ -469,9 +469,15 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="section-container border-t border-border-color py-10">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
-          <p className="font-body text-[10px] text-text-main/60 uppercase tracking-[0.18em]">
-            Digitaler Garten — 2026
-          </p>
+          <div className="font-body text-[10px] text-text-main/60 leading-relaxed">
+            <p className="uppercase tracking-[0.18em] mb-3">Digitaler Garten — 2026</p>
+            <Link href="/impressum" className="block hover:text-text-main transition-colors uppercase tracking-[0.18em]">
+              Impressum
+            </Link>
+            <Link href="/datenschutz" className="block hover:text-text-main transition-colors uppercase tracking-[0.18em] mt-1">
+              Datenschutz
+            </Link>
+          </div>
           <div className="font-body text-[10px] text-text-main/60 leading-relaxed sm:text-right">
             <p>{lang === "de" ? "Ein Projekt im Rahmen des Masterstudienganges" : "A project within the Master's programme"}</p>
             <p>{lang === "de" ? "Literatur- und Kulturtheorie" : "Literary and Cultural Theory"}</p>

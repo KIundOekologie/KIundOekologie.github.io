@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
-import Link from "next/link";
 import { Navigation } from "@/components/Navigation";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
@@ -47,24 +46,6 @@ export default function RootLayout({
           <main className="pt-14 sm:pt-16">
             {children}
           </main>
-
-          {/* Footer */}
-          <footer className="border-t border-border-color bg-bg-base mt-8">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center gap-6">
-              <Link
-                href="/impressum"
-                className="font-body text-xs text-text-main/50 hover:text-text-main transition-colors tracking-wide uppercase"
-              >
-                Impressum
-              </Link>
-              <Link
-                href="/datenschutz"
-                className="font-body text-xs text-text-main/50 hover:text-text-main transition-colors tracking-wide uppercase"
-              >
-                Datenschutz
-              </Link>
-            </div>
-          </footer>
         </Providers>
       </body>
     </html>
