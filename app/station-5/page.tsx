@@ -34,7 +34,7 @@ export default function Station5Page() {
               </p>
               <div className="quote-box">
                 <p className="text-xl sm:text-2xl lg:text-3xl">
-                  Hyperobjects are real whether or not someone is thinking of them. Indeed ... hyperobjects end the possibility of transcendental leaps outside physical reality.
+                  Hyperobjects are real whether or not someone is thinking of them. Indeed [...] hyperobjects end the possibility of transcendental leaps outside physical reality.
                 </p>
                 <cite className="font-body text-sm text-text-main/60 not-italic mt-4 block">
                   — Timothy Morton
@@ -48,7 +48,7 @@ export default function Station5Page() {
           content: (
             <div className="flow-text-justified mb-6">
               <p className="mb-6">
-                Wenn Hyperobjekte aufgrund ihrer Größe und Komplexität für menschliche Wahrnehmung unzugänglich sind, wird KI zu einem neuen Sinnesorgan – einem externen Sensorium, das Muster und Zusammenhänge sichtbar macht, die unseren Sinnen verborgen bleiben.
+                Wenn Hyperobjekte aufgrund ihrer Größe und Komplexität für menschliche Wahrnehmung unzugänglich sind, kann KI zu einem neuen Sinnesorgan werden – einem externen Sensorium, das Muster und Zusammenhänge sichtbar macht, die unseren Sinnen verborgen bleiben.
               </p>
             </div>
           ),
@@ -80,7 +80,7 @@ export default function Station5Page() {
               </p>
               <div className="quote-box">
                 <p className="text-xl sm:text-2xl lg:text-3xl">
-                  Hyperobjects are real whether or not someone is thinking of them. Indeed ... hyperobjects end the possibility of transcendental leaps outside physical reality.
+                  Hyperobjects are real whether or not someone is thinking of them. Indeed [...] hyperobjects end the possibility of transcendental leaps outside physical reality.
                 </p>
                 <cite className="font-body text-sm text-text-main/60 not-italic mt-4 block">
                   — Timothy Morton
@@ -185,8 +185,8 @@ export default function Station5Page() {
           </p>
           <p className="font-body text-base text-text-main/80">
             {lang === "de"
-              ? "Angenommen wir leben in einer Welt, die von Hyperobjekten geprägt ist? Wie können wir Verantwortung übernehmen, wenn wir nie das Ganze überblicken können?"
-              : "Suppose we live in a world shaped by hyperobjects? How can we take responsibility when we can never grasp the whole?"}
+              ? "Angenommen wir leben in einer Welt, die von Hyperobjekten geprägt ist: Wie können wir Verantwortung übernehmen, wenn wir nie das Ganze überblicken können?"
+              : "Suppose we live in a world shaped by hyperobjects: How can we take responsibility when we can never grasp the whole?"}
           </p>
         </div>
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a static multi-page website for "Digitaler Garten" – a literary-ecological audio walk through the Cyber Valley. The site explores themes of AI, nature, and ecocriticism through an academic yet accessible lens.
+This is a static multi-page website for "Digitaler Garten" – a literary-ecological walk through the Cyber Valley. The site explores themes of AI, nature, and ecocriticism through an academic yet accessible lens.
 
 **Tech Stack:** Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS
 

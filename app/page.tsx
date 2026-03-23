@@ -38,7 +38,7 @@ export default function HomePage() {
         {/* Titel – unten links positioniert */}
         <div className="absolute bottom-0 left-0 right-0 z-10 px-6 sm:px-10 lg:px-16 pb-12 sm:pb-16 lg:pb-20">
           <p className="font-body text-[10px] sm:text-xs text-white/45 uppercase tracking-[0.28em] mb-4 sm:mb-6">
-            {lang === "de" ? "Ein literarisch-ökologischer Pfad" : "A literary-ecological audio walk"}
+            {lang === "de" ? "Ein literarisch-ökologischer Pfad" : "A literary-ecological walk"}
           </p>
           <h1
             className="font-heading text-white font-normal leading-[0.88]"
@@ -203,7 +203,7 @@ export default function HomePage() {
             style={{ fontSize: "clamp(1.4rem, 3vw, 2.6rem)" }}
           >
             {lang === "de"
-              ? <>„Die vermeintlich immaterielle digitale Arbeit manifestiert sich in massiver ökologischer Materialität."</>
+              ? <>Die vermeintlich immaterielle digitale Arbeit manifestiert sich in massiver ökologischer Materialität.</>
               : <>The supposedly immaterial digital work manifests itself in massive ecological materiality.</>}
           </p>
           <div className="h-px bg-border-color mt-12 sm:mt-16" />
